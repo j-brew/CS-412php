@@ -75,6 +75,8 @@ body {
     border-top: 2px black solid;
     border-right: 2px black solid;
     border-bottom: 2px black solid;
+    z-index: 3;
+    //height: 142px;
 }
 #donate a{
     text-decoration: none;

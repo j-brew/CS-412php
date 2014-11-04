@@ -9,7 +9,7 @@
         <script src="index.js" ></script>
     </head>
     <body>
-        <div id="donate">
+        <div id="donate" >
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=G8MHZAQPP8JLG" target="_blank"><span>D<br/>O<br/>N<br/>A<br/>T<br/>E</span></a>
         </div>
         
