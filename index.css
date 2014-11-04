@@ -1,0 +1,247 @@
+/* Using margin:auto; will not work in IE8 and earlier, unless a !DOCTYPE is declared. */
+
+body {
+    background: yellow;
+    min-width: 980px; // 1000
+}
+
+#topbanner{
+    background: white;
+    width: 100%;
+    height: 150px;
+}
+#bannerpic{
+    border: 1px black solid;
+    width: 900px;
+    height: 148px;
+    margin: 0 auto;
+}
+#logo{
+    width: 900px;
+    height: 148px;
+}
+#logo1 {
+    width: 236px;
+    height: 148px;
+}
+#logo2 {
+    width: 236px;
+    height: 148px;
+    float: right;
+}
+
+    /* *****  MENU ***** */
+#menu{
+    position: relative;
+    z-index: 2;
+    background: red;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    border: 1px black solid;
+}
+#menuNav{
+    background: coral;
+    width: 600px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+#menuNav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menuNav ul li{
+    background: white;
+    border: 1px black solid;
+    padding: 5px;
+    display: inline;
+    width: 80px;
+}
+#menuNav ul li a{
+    text-decoration: none;
+}
+
+/* *****  DONATE BUTTON ***** */
+#donate {
+    background: white;
+    margin: 5px 10px 5px 0px;
+    padding: 5px 10px 5px 20px;
+    //float: right;
+    position: fixed;
+    top: 250px;
+    left: 0px;
+    background-color: coral;
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+}
+#donate a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 900;
+}
+#blog{
+    background: white;
+    margin: 5px 0 5px 10px;
+    padding: 5px;
+    float: left;
+    border: 1px black solid;
+}
+#blog a{
+    text-decoration: none;
+}
+
+    /* *****  MAIN ***** */
+#main {
+    position: relative;
+    background: blue;
+    width: 900px;
+    height: auto;
+    margin: 0px auto 0px auto;
+    padding: 10px 0 10px 0;
+}
+
+    /* *****  PART OF ABOUT US ***** */
+/*#info{
+    //display: inline;
+    //border: solid 1px red;
+    //width: 898px;
+    //height: auto;
+}
+#main #info .p2{
+    display: inline-block;
+    width: 540px;
+    //padding: 0px 25px 0px 25px;
+    margin: 0px 0px 20px 25px;
+    text-align: justify;
+    //border: red solid 1px;
+}
+#main #info ul {
+    display: inline-block;
+    //width: 800px;
+    //text-align: justify;
+    margin:  0;
+    //border: solid 1px black;
+}
+#main #info ul li{
+    //border: solid 1px red;
+    padding: 0px 25px 5px 0px;
+}*/
+
+    /* *****  HISTORY BOOK LINK ***** */
+#historyBook{
+    display: inline-block;
+    float: right;
+    margin: 0px 25px 0px 0px;
+}
+#centerBook{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main ol{
+    width: 600px;
+    //text-align: justify;
+    margin: 0;
+}
+#main ul {
+    //display: inline-block;
+    //width: 500px;
+    text-align: justify;
+    margin:  0;
+}
+#main ul li{
+    padding: 5px 0;
+}
+h2{
+    padding: 0;
+    text-align: center;
+}
+h3{
+    padding: 0 0 0 25px;
+}
+
+#main #info .p1{
+    padding: 0px;
+    width: 570px;
+    margin: 15px 25px;
+    float: left;
+    //border: solid 1px black;
+}
+#trumpet{
+    display: inline-block;
+    width: 250px;
+    float: right;
+    //padding: 15px 25px 0px 0px;
+    border: red solid 1px;
+    margin: 15px 25px 0px 0px;
+}
+
+    /* *****  PART OF HOW TO HELP ***** */
+/*#leftcol{
+    display: inline-block;
+    width: 360px;
+    //border: yellow 1px solid;
+    margin-left: 25px;
+    text-align: justify;
+}
+#rightcol{
+    display: inline-block;
+    width: 460px;
+    float: right;
+    //border: yellow 1px solid;
+    margin-right: 25px;
+    text-align: justify
+}
+#rightcol h3{
+    text-align: center;
+}*/
+
+    /* *****  GALLERY  ***** */
+/*.video{
+    border: solid white 2px;
+    width: 500px;
+    height: 298px;
+    margin: 0px auto 25px auto;
+}*/
+
+    /* *****  CONTACT US  ***** */
+/*#email{
+    //float: left;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    //border: red solid 1px;
+}
+#address{
+    display: inline-block;
+    float: right;
+    //border: red solid 1px;
+}*/
+
+    /* *****  FOOTER ***** */
+#footer{
+    background: red;
+    width: 100%;
+    height: 60px;
+}
+#footp{
+    background: green;
+    width: 690px;
+    height: 20px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+#footc{
+    background: gray;
+    width: 220px;
+    height: 20px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}

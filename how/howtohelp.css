@@ -1,0 +1,28 @@
+#main #info .p2{
+    display: inline-block;
+    width: 540px;
+    //padding: 0px 25px 0px 25px;
+    margin: 0px 0px 20px 25px;
+    text-align: justify;
+    //border: red solid 1px;
+}
+    /* *****  PART OF HOW TO HELP ***** */
+#leftcol{
+    display: inline-block;
+    width: 360px;
+    //border: yellow 1px solid;
+    margin-left: 25px;
+    text-align: justify;
+}
+#rightcol{
+    display: inline-block;
+    width: 460px;
+    float: right;
+    //border: yellow 1px solid;
+    margin-right: 25px;
+    text-align: justify
+}
+#rightcol h3{
+    text-align: center;
+}
+
