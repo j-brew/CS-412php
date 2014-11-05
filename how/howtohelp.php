@@ -35,6 +35,20 @@
         
         <div id="main">
             <div id="info">
+                
+                <div id="quotes">
+                    <q>I believe that the Junior Jazz Foundation is making a significant
+                        contribution to our society by helping to develop our fine 
+                        young musicians into good citizens of a world community.  
+                        Music is a great vehicle to take you anywhere you want to 
+                        go in life. I am blessed to be a part of something as great 
+                        as The Junior Jazz Foundation.
+                    </q>
+                    <div id="author">
+                        <p>- James Berry, M.M.</p>
+                    </div>
+                </div>
+                
                 <h2>Supporting the JJF</h2>
                 <!--<img id="historyBook" src="../All_image/Jaz/IMG_6905.JPG" alt="book sale">-->
                 <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink" style="width:324px;height:250px">  

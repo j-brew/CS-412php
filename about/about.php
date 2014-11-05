@@ -34,6 +34,18 @@
         
         <div id="main">
             <div id="info">
+                
+                <div id="quotes">
+                    <q>The Junior Jazz Foundation is an exceptional concept designed
+                        to continue the tradition of Jazz by supporting programs 
+                        for young musicians who will be the future guardians of 
+                        this great American music
+                    </q>
+                    <div id="author">
+                        <p>- Homer Boynton</p>
+                    </div>
+                </div>
+                
                 <h2>History of The Junior Jazz Foundation</h2>
                 <!--<img id="historyBook" src="../All_image/Jaz/IMG_6905.JPG" alt="book sale">-->
                 <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink" style="width:324px;height:250px">  

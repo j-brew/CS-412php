@@ -35,6 +35,16 @@
         
         <div id="main">
             <div id="info">
+                
+                <div id="quotes">
+                    <q>Without music, life is a journey through a desert.
+
+                    </q>
+                    <div id="author">
+                        <p>- James Berry, M.M.</p>
+                    </div>
+                </div>
+                
                 <h2>Contact Us</h2>
                 <div id="email">
                     <form>

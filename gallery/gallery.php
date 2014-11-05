@@ -35,6 +35,15 @@
         
         <div id="main">
             <div id="info">
+                
+                <div id="quotes">
+                    <q>The Junior Jazz Foundation has been instrumental in getting our jazz program off the ground at Hilton Head Christian Academy.
+                    </q>
+                    <div id="author">
+                        <p>- James Berry, M.M.</p>
+                    </div>
+                </div>
+                
                 <h2>Photos</h2>
                 
                 <hr>
