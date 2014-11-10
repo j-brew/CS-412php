@@ -1,3 +1,5 @@
+<?php include '../db.php'; ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -37,16 +39,7 @@
             <div id="info">
                 
                 <div id="quotes">
-                    <q>I believe that the Junior Jazz Foundation is making a significant
-                        contribution to our society by helping to develop our fine 
-                        young musicians into good citizens of a world community.  
-                        Music is a great vehicle to take you anywhere you want to 
-                        go in life. I am blessed to be a part of something as great 
-                        as The Junior Jazz Foundation.
-                    </q>
-                    <div id="author">
-                        <p>- James Berry, M.M.</p>
-                    </div>
+                    <?php randQuote(); ?>
                 </div>
                 
                 <h2>Supporting the JJF</h2>

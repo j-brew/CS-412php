@@ -1,3 +1,5 @@
+<?php include '../db.php'; ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -37,11 +39,7 @@
             <div id="info">
                 
                 <div id="quotes">
-                    <q>The Junior Jazz Foundation has been instrumental in getting our jazz program off the ground at Hilton Head Christian Academy.
-                    </q>
-                    <div id="author">
-                        <p>- James Berry, M.M.</p>
-                    </div>
+                    <?php randQuote(); ?>
                 </div>
                 
                 <h2>Photos</h2>

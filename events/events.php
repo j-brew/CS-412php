@@ -1,3 +1,5 @@
+<?php include '../db.php'; ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -36,22 +38,7 @@
             <div id="info">
                 
                 <div id="quotes">
-                    <q>The Junior Jazz Foundation has been instrumental in getting 
-                        our jazz program off the ground at Hilton Head Christian 
-                        Academy. Even though we have a small program, the JJF has 
-                        supported us through numerous instrument donations, and a 
-                        large monetary donation which allowed us to purchase a wonderful 
-                        baritone saxophone. In addition, my students have had the 
-                        incredible experience of playing in front of a live audience 
-                        at the Jazz Corner and have also had the privilege of sitting 
-                        inches away from the legendary John Pizzarelli quartet. The 
-                        Junior Jazz Foundation has gone above and beyond to support 
-                        our small, but growing jazz program at Hilton Head Christian 
-                        Academy."
-                    </q>
-                    <div id="author">
-                        <p>- James Berry, M.M.</p>
-                    </div>
+                    <?php randQuote(); ?>
                 </div>
                 
                 <h2>Events</h2>

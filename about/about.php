@@ -1,3 +1,5 @@
+<?php include '../db.php'; ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -36,14 +38,7 @@
             <div id="info">
                 
                 <div id="quotes">
-                    <q>The Junior Jazz Foundation is an exceptional concept designed
-                        to continue the tradition of Jazz by supporting programs 
-                        for young musicians who will be the future guardians of 
-                        this great American music
-                    </q>
-                    <div id="author">
-                        <p>- Homer Boynton</p>
-                    </div>
+                    <?php randQuote(); ?>
                 </div>
                 
                 <h2>History of The Junior Jazz Foundation</h2>
