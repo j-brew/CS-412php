@@ -37,17 +37,19 @@
         <div id="main">
             <div id="info">
                 <img id="trumpet" src="pic/teachtrumpet.jpg" alt="junior trumpet">
-                <p class="p1">The Junior Jazz Foundation (JJF) is the philanthropic outreach 
-                    effort of The Jazz Corner on beautiful Hilton Head Island,SC.</p>
-                <p class="p1">We believe that the original American art form of jazz music 
-                    is important. Our focus is to educate and enable young 
-                    musicians in our community by supplying instruments, 
-                    scholarships, classes and seminars.</p>
+                <div id="intro">
+                    <p class="p1">The Junior Jazz Foundation (JJF) is the philanthropic outreach 
+                        effort of The Jazz Corner on beautiful Hilton Head Island,SC.</p>
+                    <p class="p1">We believe that the original American art form of jazz music 
+                        is important. Our focus is to educate and enable young 
+                        musicians in our community by supplying instruments, 
+                        scholarships, classes and seminars.</p>
                 
-                <!--<img id="centerBook" src="All_image/Jaz/IMG_6905.JPG" alt="book sale">-->
+                    <!--<img id="centerBook" src="All_image/Jaz/IMG_6905.JPG" alt="book sale">-->
                 <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink" style="width:324px;height:250px">  
                     <img id="centerBook" src="All_image/Jaz/IMG_6905.JPG" alt="book sale">
                 </a>
+                </div>
             </div>
         </div>
         
