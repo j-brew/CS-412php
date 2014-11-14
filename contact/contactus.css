@@ -4,16 +4,37 @@
 input{
      margin: 10px 15px 5px 5px;   
 }
+label{
+    margin-top: 10px;
+    display: inline-block;
+}
+#emailMsg{
+    text-align: center;
+    border: solid 1px green;
+    background-color: white;
+    width: 350px;
+    margin: 10px auto 10px auto;
+}
 #email{
     //float: left;
     background-color: white;
     display: inline-block;
     width: 350px;
-    height: 150px;
+    height: 250px;
     border: black solid 3px;
     margin: 0 50px;
     //padding: 5px;
-    text-align: right;
+    text-align: center;
+}
+.box{
+    width: 300px;
+    border: solid 1px black;
+    margin: 0 auto 0 auto;
+}
+textarea {
+    width: 300px;
+    border: solid 1px black;
+    margin: 0 auto 0 auto;
 }
 #address{
     background-color: white;

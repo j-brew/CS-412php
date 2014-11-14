@@ -1,4 +1,6 @@
-<?php include '../db.php'; ?>
+<?php include '../db.php'; 
+      include 'emailus.php';
+?>
 
 <!DOCTYPE html>
 
@@ -43,14 +45,31 @@
                 </div>
                 
                 <h2>Contact Us</h2>
+                
+                <?php
+                    if($displayInfo != ""){
+                    ?>
+                    <p id="emailMsg"><?= $displayInfo; ?></p>
+                    <?php
+                    }
+                ?>
+                
                 <div id="email">
-                    <form>
+                    <form method="POST" action="">
                         <label>Your email address *</label>
-                        <input name="email" type="email" required><br>
+                        <br>
+                        <input class="box" name="email" type="email" required>
+                        <br>
                         <label>Subject *</label>
-                        <input name="subject" type="text" required><br>
+                        <br>
+                        <input class="box" name="subject" type="text" required>
+                        <br>
                         <label>Message *</label>
-                        <input name="message" type="text" required>
+                        <br>
+                        <textarea name="message" required rows="5"></textarea><br>
+                        <input name="Send" type="submit">
+                        <br/>
+                        <small>* required fields</small>
                     </form>
                 </div>
 
