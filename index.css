@@ -123,33 +123,6 @@ body {
     margin: 0;
 }
 
-    /* *****  PART OF ABOUT US ***** */
-/*#info{
-    //display: inline;
-    //border: solid 1px red;
-    //width: 898px;
-    //height: auto;
-}
-#main #info .p2{
-    display: inline-block;
-    width: 540px;
-    //padding: 0px 25px 0px 25px;
-    margin: 0px 0px 20px 25px;
-    text-align: justify;
-    //border: red solid 1px;
-}
-#main #info ul {
-    display: inline-block;
-    //width: 800px;
-    //text-align: justify;
-    margin:  0;
-    //border: solid 1px black;
-}
-#main #info ul li{
-    //border: solid 1px red;
-    padding: 0px 25px 5px 0px;
-}*/
-
     /* *****  HISTORY BOOK LINK ***** */
 #historyBook{
     display: inline-block;
@@ -199,48 +172,6 @@ h3{
     border: red solid 1px;
     margin: 15px 25px 0px 0px;
 }
-
-    /* *****  PART OF HOW TO HELP ***** */
-/*#leftcol{
-    display: inline-block;
-    width: 360px;
-    //border: yellow 1px solid;
-    margin-left: 25px;
-    text-align: justify;
-}
-#rightcol{
-    display: inline-block;
-    width: 460px;
-    float: right;
-    //border: yellow 1px solid;
-    margin-right: 25px;
-    text-align: justify
-}
-#rightcol h3{
-    text-align: center;
-}*/
-
-    /* *****  GALLERY  ***** */
-/*.video{
-    border: solid white 2px;
-    width: 500px;
-    height: 298px;
-    margin: 0px auto 25px auto;
-}*/
-
-    /* *****  CONTACT US  ***** */
-/*#email{
-    //float: left;
-    display: inline-block;
-    width: 400px;
-    height: 200px;
-    //border: red solid 1px;
-}
-#address{
-    display: inline-block;
-    float: right;
-    //border: red solid 1px;
-}*/
 
     /* *****  FOOTER ***** */
 #footer{
