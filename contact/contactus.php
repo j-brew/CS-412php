@@ -29,7 +29,13 @@
                 <ul>
                     <li><a href="../index.php">HOME</a></li>
                     <li><a href="../about/about.php">ABOUT US</a></li>
-                    <li><a href="../how/howtohelp.php">HOW TO HELP</a></li>
+                    <li><a href="../how/howtohelp.php">HOW TO HELP</a>
+                        <ul class="subMenu">
+                            <li><a href="../how/howtohelp.php#support" target="self">Supporting the JJF</a></li>
+                            <li><a href="../how/howtohelp.php#contributor" target="self">Contributer Centers</a></li>
+                            <li><a href="../how/howtohelp.php#donation" target="self">Donation Benefit</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../events/events.php">EVENTS</a></li>
                     <li><a href="../gallery/gallery.php">GALLERY</a></li>
                     <li><a href="contactus.php">CONTACT US</a></li>

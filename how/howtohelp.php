@@ -24,10 +24,16 @@
         
         <div id="menu">
             <div id="menuNav">
-                <ul>
+                <ul id="startMenu">
                     <li><a href="../index.php">HOME</a></li>
                     <li><a href="../about/about.php">ABOUT US</a></li>
-                    <li><a href="howtohelp.php">HOW TO HELP</a></li>
+                    <li><a href="howtohelp.php">HOW TO HELP</a>
+                        <ul class="subMenu">
+                            <li><a href="#support" target="self">Supporting the JJF</a></li>
+                            <li><a href="#contributor" target="self">Contributer Centers</a></li>
+                            <li><a href="#donation" target="self">Donation Benefit</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../events/events.php">EVENTS</a></li>
                     <li><a href="../gallery/gallery.php">GALLERY</a></li>
                     <li><a href="../contact/contactus.php">CONTACT US</a></li>
@@ -37,8 +43,8 @@
         
         <div id="main">
             <div id="info">
-                
-                <div id="quotes">
+               <div ></div>
+                <div id="quotes" id="support">
                     <?php randQuote(); ?>
                 </div>
                 
@@ -67,6 +73,7 @@
                     <li>The best performances the world has to offer in jazz & 
                         blues</li>
                     <li>Showcases for emerging and regional artists</li>
+                    <div id="contributor"></div>
                     <li>Hilton Head Island as a tourist destination for music fans</li>
                 </ul>
                 
@@ -94,6 +101,7 @@
                             <li>International artist schedule at The Jazz Corner</li>
                             <li>Regional outreach community schedule at various 
                                 locations</li>
+                            <div id="donation"></div>
                             <li>NOTE *100% of all ticket proceeds will be donated 
                                 to The Junior Jazz Foundation</li>
                         </ul>
@@ -102,7 +110,7 @@
                 
                 <hr>
                 
-                <h2>Donation Levels and Benefits</h2>
+                <h2 >Donation Levels and Benefits</h2>
                 <div id="leftcol">
                     <q>Jazz is the universal language. Everyone can speak jazz with 
                         your heart and your spirit...</q>
