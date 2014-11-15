@@ -51,10 +51,11 @@
                         musicians in our community by supplying instruments, 
                         scholarships, classes and seminars.</p>
                 
-                    <!--<img id="centerBook" src="All_image/Jaz/IMG_6905.JPG" alt="book sale">-->
-                <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink" style="width:324px;height:250px">  
-                    <img id="centerBook" src="All_image/Jaz/IMG_6905.JPG" alt="book sale">
-                </a>
+                    <div id="centerBook">
+                        <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink">  
+                            <img src="All_image/Jaz/IMG_6905.JPG" alt="book sale">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
