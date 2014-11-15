@@ -85,7 +85,40 @@
                         <li> <img src="../All_image/Jaz/Gallary/IMG_6934.JPG" alt=""/></li>
                         <li> <img src="../All_image/Jaz/Gallary/IMG_6935.JPG" alt=""/></li>
                         <li> <img src="../All_image/Jaz/Gallary/IMG_6936.JPG" alt=""/></li>
-                    </ul>  </div> 
+                    </ul>
+                </div>
+                <div align="center">
+                <noscript id="noScript">
+                    <h1 style="color: white;"> javascript option in your browser is disabled</h1>
+                      
+                        <table >
+                            <tr>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6923.PNG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6924.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6925.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6926.JPG" alt=""/></td>
+                            </tr>  
+                            <tr>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6927.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6928.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6929.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6930.JPG" alt=""/></td>
+                            </tr>
+                              <tr>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6931.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6932.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6933.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6934.JPG" alt=""/></td>
+                            </tr>
+                              <tr>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6935.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6936.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6926.JPG" alt=""/></td>
+                                <td><img src="../All_image/Jaz/Gallary/IMG_6927.JPG" alt=""/></td>
+                            </tr>
+                        </table>
+                    </noscript>
+                </div> 
                 <hr>
                 <h2>Videos</h2>
                 <div class="video">
