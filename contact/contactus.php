@@ -28,12 +28,17 @@
             <div id="menuNav">
                 <ul>
                     <li><a href="../index.php">HOME</a></li>
-                    <li><a href="../about/about.php">ABOUT US</a></li>
+                    <li><a href="../about/about.php">ABOUT US</a>
+                        <ul>
+                            <li><a href="../about/concerts.php">Concerts</a></li>
+                            <li><a href="../about/news.php">In The News</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../how/howtohelp.php">HOW TO HELP</a>
                         <ul class="subMenu">
-                            <li><a href="../how/howtohelp.php#support" target="self">Supporting the JJF</a></li>
-                            <li><a href="../how/howtohelp.php#contributor" target="self">Contributer Centers</a></li>
-                            <li><a href="../how/howtohelp.php#donation" target="self">Donation Benefit</a></li>
+                            <li><a href="../how/howtohelp.php#support" target="_self">Supporting the JJF</a></li>
+                            <li><a href="../how/howtohelp.php#contributor" target="_self">Contributer Centers</a></li>
+                            <li><a href="../how/howtohelp.php#donation" target="_self">Donation Benefits</a></li>
                         </ul>
                     </li>
                     <li><a href="../events/events.php">EVENTS</a></li>
@@ -73,7 +78,7 @@
                         <label>Message *</label>
                         <br>
                         <textarea name="message" required rows="5"></textarea><br>
-                        <input name="Send" type="submit">
+                        <input name="Send" type="submit" value="Submit">
                         <br/>
                         <small>* required fields</small>
                     </form>

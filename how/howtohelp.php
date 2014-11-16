@@ -4,7 +4,7 @@
 
 <html>
     <head>
-        <title>how to help</title>
+        <title>How To Help</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../index.css">
@@ -26,12 +26,17 @@
             <div id="menuNav">
                 <ul id="startMenu">
                     <li><a href="../index.php">HOME</a></li>
-                    <li><a href="../about/about.php">ABOUT US</a></li>
+                    <li><a href="../about/about.php">ABOUT US</a>
+                        <ul>
+                            <li><a href="../about/concerts.php">Concerts</a></li>
+                            <li><a href="../about/news.php">In The News</a></li>
+                        </ul>
+                    </li>
                     <li><a href="howtohelp.php">HOW TO HELP</a>
                         <ul class="subMenu">
-                            <li><a href="#support" target="self">Supporting the JJF</a></li>
-                            <li><a href="#contributor" target="self">Contributer Centers</a></li>
-                            <li><a href="#donation" target="self">Donation Benefit</a></li>
+                            <li><a href="#support" target="_self">Supporting the JJF</a></li>
+                            <li><a href="#contributor" target="_self">Contributer Centers</a></li>
+                            <li><a href="#donation" target="_self">Donation Benefits</a></li>
                         </ul>
                     </li>
                     <li><a href="../events/events.php">EVENTS</a></li>
