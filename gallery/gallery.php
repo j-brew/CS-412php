@@ -77,19 +77,7 @@
                 <h2>Photos</h2>
                 <div align="center">
                     <ul id="myGallery"  >
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6923.PNG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6924.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6925.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6926.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6927.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6928.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6929.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6930.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6932.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6933.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6934.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6935.JPG" alt=""/></li>
-                        <li> <img src="../All_image/Jaz/Gallary/IMG_6936.JPG" alt=""/></li>
+                        <?php imageSlider() ?>
                     </ul>
                 </div>
                 <div align="center">
