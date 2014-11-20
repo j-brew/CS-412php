@@ -31,7 +31,7 @@
                         </ul>
                     </li>
                     <li><a href="how/howtohelp.php">HOW TO HELP</a>
-                        <ul>
+                        <ul id="how">
                             <li><a href="how/howtohelp.php#support" target="_self">Supporting the JJF</a></li>
                             <li><a href="how/howtohelp.php#contributor" target="_self">Contributer Centers</a></li>
                             <li><a href="how/howtohelp.php#donation" target="_self">Donation Benefits</a></li>

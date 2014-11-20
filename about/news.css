@@ -1,0 +1,32 @@
+
+#new {
+    width: 800px;
+    //border: solid red 1px;
+    margin: 0 auto 0 auto;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    border-top: black 1px solid;
+}
+
+.newsMain {
+    border: solid yellow 1px;
+}
+p {
+    margin: 5px 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+.newsLink {
+    width: 120px;
+    text-align: center;
+    border: solid red 1px;
+    margin: 0 auto 0 auto;
+}
+.newsLink a {
+    border: solid white 1px;
+    color: white;
+}

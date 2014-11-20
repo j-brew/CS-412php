@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../index.css">
+        <link rel="stylesheet" type="text/css" href="news.css">
         <script src="../index.js" ></script>
     </head>
     <body>
@@ -55,6 +56,37 @@
                 </div>
                 
                 <h2>In The News</h2>
+                <div id="new">
+                    <div class="news">
+                        <?php news(); ?>
+                        <!--<div class="newsTitle">
+                            <h3>Jazz Corner celebrates 10th anniversary with benefit concerts</h3>
+                            <div class="newsMain">
+                                <p>The concept of a jazz club on Hilton Head Island was a bit 
+                                    far-fetched when the Jazz Corner opened. The word was it 
+                                    wouldn't last. There was no way it could draw consistent 
+                                    acts. Even if it did, no one would want to pay the cover 
+                                    to get in.
+                                </p>
+                                <p>
+                                    A decade later, the Jazz Corner has carved a niche in The 
+                                    Village at Wexford, defying projections of its demise. And, 
+                                    most recently, it's tried to foster the next generation of 
+                                    jazz lovers. 
+                                </p>
+                                <p>
+                                    In honor of its 10th anniversary, the Jazz Corner is holding 
+                                    a series of concerts to benefit its nonprofit foundation, 
+                                    Junior Jazz.
+                                </p>
+                            </div>
+                            <div class="newsLink">
+                                <a href="http://www.lowcountrynewspapers.net/archive/node/32778" target="_blank"><span class="name">READ MORE</span></a>
+                            </div>
+                        </div>-->
+                        
+                    </div>
+                </div>
             </div>
         </div>
         
