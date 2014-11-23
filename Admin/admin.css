@@ -1,0 +1,18 @@
+html {
+    background-color: black;
+}
+#title {
+    text-align: center;
+    border-bottom: solid red 2px;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto 0 auto;
+}
