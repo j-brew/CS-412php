@@ -13,11 +13,9 @@ function randQuote(){
     $result = mysqli_query($connection, $query);
     $row = mysqli_fetch_row($result);
     
-    echo "<q>".$row[1]."</q>";     // quote
+    echo "<q>".$row[1]."</q><br>";     // quote
     echo "<div id=author>";
-        echo "<div id=\"author\">";
             echo "<p>".$row[2]."</p>";  // author
-        echo "</div>";
     echo "</div>";
 }
 

@@ -167,10 +167,11 @@ body {
     margin: 0 auto 0 auto;
     //border: red solid 1px;
     //width: 200px;
+    display: inline-block;
 }
 #author p{
     padding: 0;
-    margin: 0;
+    margin: 0 auto 0 auto;
 }
 
 /*#main ol{

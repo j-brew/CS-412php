@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: white;
 }
 #title {
     text-align: center;
@@ -10,6 +10,14 @@ h1{
     padding: 0;
 }
 
+#out {
+    border-bottom: solid red 2px;
+    text-align: center;
+}
+form {
+    margin: 0;
+    padding: 0;
+}
 #content {
     background-color: white;
     width: 800px;
