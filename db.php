@@ -39,6 +39,39 @@ function imageSlider() {
     $connection->close();
 }
 
+function imageSlider_NoScript() {
+    include 'dbInfo.php';
+    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    if (mysqli_connect_error()) {
+        die("<p><b>Failed to connect to Database</b></p>"); // exits
+    }
+
+    $query = "SELECT * FROM ImageInfo";
+    $result = mysqli_query($connection, $query);
+    $numRow=mysqli_num_rows($result);
+    $numRow = $numRow / 4;
+    $remainder = $numRow % 4;
+        
+    echo "<p>number of rows = ".$numRow."</p>";
+    echo "<p>remainder = ".$remainder."</p>";
+     for ($j = 0; $j <$numRow; $j++)
+     {
+        echo "<tr>";
+        
+        for($i = 0;$i < 4; $i++) {
+            $row = mysqli_fetch_row($result);
+            if ($row > 0){
+                echo "<td><img src='../All_image/Jaz/Gallary/$row[2]' alt=''/></td>";
+                echo "<p>".$row[2]."</p>";
+            }
+        }
+        echo"</tr>";
+     }
+    
+
+    $connection->close();
+}
+
 function news(){
     include 'dbInfo.php';
     
