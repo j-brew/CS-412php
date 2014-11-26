@@ -1,3 +1,9 @@
+<?php include 'login.php';
+    if (session_id() == ''){
+        session_start();
+        echo "<p>IPaddress = ".$_SESSION['IPaddress']."</p><p>userAgent = ".$_SESSION['userAgent']."</p><p>sessionID = ".$_SESSION['sessionID']."</p><p>sessionTime = ".$_SESSION['sessionTime']."</p>";
+    }
+?>
 
 <!DOCTYPE html>
 
@@ -17,11 +23,11 @@
             </div>
             
             <div id="info">
-                <form method="POST" action="admin.php">
+                <form method="POST" action="">
                     <ul>  
                         <li>
                             <label>User name : </label>  
-                            <input type="text" name="usermail" placeholder="user name" required>
+                            <input type="text" name="user" placeholder="user name" required>
                         </li>
                         <li>
                             <label>Password : </label>  
@@ -33,7 +39,9 @@
                     </div>
                 </form>
             </div>
-            
+            <?php if($error != ""){ ?>
+                <div id="error"><?= $error; ?></div>
+            <?php } ?>
         </div> 
         
     </body>

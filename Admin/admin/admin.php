@@ -1,4 +1,7 @@
-
+<?php 
+    session_start();
+    echo "<p>IPaddress = ".$_SESSION['IPaddress']."</p><p>userAgent = ".$_SESSION['userAgent']."</p><p>sessionID = ".$_SESSION['sessionID']."</p><p>sessionTime = ".$_SESSION['sessionTime']."</p>";
+?>
 <!DOCTYPE html>
 
 <html>
@@ -15,12 +18,20 @@
             <div id="title">
                 <h1>Welcome Admin</h1>
             </div>
+            <div id="out">
+                <form method="POST" action="logout.php">
+                    <input type="submit" value="LOG OUT">
+                </form>
+            </div>
             
             <div id="info">
                 <ul>
-                    <li>add/delete news articles</li>
+                    <li>add/delete news articles
+                    
+                    </li>
                     <li>add/delete concert updates</li>
                     <li>add/delete gallery pictures</li>
+                    <li></li>
                 </ul>
             </div>
             
