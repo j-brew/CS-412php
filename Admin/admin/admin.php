@@ -1,6 +1,12 @@
 <?php 
     session_start();
-    echo "<p>IPaddress = ".$_SESSION['IPaddress']."</p><p>userAgent = ".$_SESSION['userAgent']."</p><p>sessionID = ".$_SESSION['sessionID']."</p><p>sessionTime = ".$_SESSION['sessionTime']."</p>";
+    if (!isset($_SESSION['IPaddress'])){
+        echo "<h1> Your session has expired</p>";
+    }
+    else{
+        session_start();
+        echo "<p>IPaddress = ".$_SESSION['IPaddress']."</p><p>userAgent = ".$_SESSION['userAgent']."</p><p>sessionID = ".$_SESSION['sessionID']."</p><p>sessionTime = ".$_SESSION['sessionTime']."</p>";
+    }
 ?>
 <!DOCTYPE html>
 

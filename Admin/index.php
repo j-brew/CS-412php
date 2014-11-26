@@ -1,7 +1,17 @@
 <?php include 'login.php';
-    if (session_id() == ''){
-        session_start();
-        echo "<p>IPaddress = ".$_SESSION['IPaddress']."</p><p>userAgent = ".$_SESSION['userAgent']."</p><p>sessionID = ".$_SESSION['sessionID']."</p><p>sessionTime = ".$_SESSION['sessionTime']."</p>";
+
+    session_start();
+    if (!isset($_SESSION['IPaddress'])){
+        echo 'session IP is NOT set';    
+    }
+    else{
+        echo "<p>previous session time = ".$_SESSION['sessionTime']."</p>";
+        echo "current time = ".time();
+        //echo "calculation = ".($_SESSION['sessionTime']-time());
+        if ((time()-$_SESSION['sessionTime']) > 30){
+          echo "<p>session expired</p>";  
+        
+        }
     }
 ?>
 
