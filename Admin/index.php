@@ -1,6 +1,6 @@
 <?php include 'login.php';
 
-    session_start();
+    //session_start();
     if (!isset($_SESSION['IPaddress'])){
         echo 'session IP is NOT set';    
     }

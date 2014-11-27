@@ -9,5 +9,6 @@
         <form action="php_upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="file1">
             <input type="submit">
-        </form></body>	
+        </form>
+    </body>	
 </html>
