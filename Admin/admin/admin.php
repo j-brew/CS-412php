@@ -4,7 +4,7 @@
         echo "<h1> Your session has expired</p>";
     }
     else{
-        session_start();
+        //session_start();
         echo "<p>IPaddress = ".$_SESSION['IPaddress']."</p><p>userAgent = ".$_SESSION['userAgent']."</p><p>sessionID = ".$_SESSION['sessionID']."</p><p>sessionTime = ".$_SESSION['sessionTime']."</p>";
     }
 ?>
@@ -32,7 +32,7 @@
             
             <div id="info">
                 <ul>
-                    <li>add/delete news articles
+                    <li><a href="gallery.php" >add/delete news articles</a>
                     
                     </li>
                     <li>add/delete concert updates</li>
