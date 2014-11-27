@@ -2,7 +2,7 @@
 
 include 'phpfiles/GallaryUpload.php';
 
-session_start();
+/*session_start();
 if (!isset($_SESSION['IPaddress'])) {
     echo 'session IP is NOT set';
 } else {
@@ -12,7 +12,7 @@ if (!isset($_SESSION['IPaddress'])) {
     if ((time() - $_SESSION['sessionTime']) > 30) {
         echo "<p>session expired</p>";
     }
-}
+}*/
 ?>
 
 <!DOCTYPE html>
