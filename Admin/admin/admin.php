@@ -12,7 +12,7 @@
 
 <html>
     <head>
-        <title>Welcome admin</title>
+        <title>Welcome Admin</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="admin.css">
@@ -32,12 +32,9 @@
             
             <div id="info">
                 <ul>
-                    <li><a href="gallery.php" >add/delete news articles</a>
-                    
-                    </li>
-                    <li>add/delete concert updates</li>
-                    <li>add/delete gallery pictures</li>
-                    <li></li>
+                    <li><a href="gallery.php" >add/delete gallery pictures</a></li>
+                    <li><a href="concerts.php" >add/delete concert updates</a></li>
+                    <li><a href="news.php" >add/delete news articles</li>
                 </ul>
             </div>
             

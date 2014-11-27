@@ -24,3 +24,37 @@ form {
     height: 600px;
     margin: 0 auto 0 auto;
 }
+
+/* * * * ADMIN NEWS PAGE * * * * */
+#news {
+    border: solid black 1px;
+    width: 500px;
+    height: 300px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+}
+
+label {
+    margin: 5px;
+}
+.txtbox {
+    margin: 5px;
+    width: 300px;
+}
+textarea {
+    margin: 5px;
+}
+#save {
+    width: 100px;
+    margin: 0 auto 0 auto;
+    //text-align: center;
+    //border: solid red 1px;
+}
+#save input {
+    width: 100px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: purple;
+}
