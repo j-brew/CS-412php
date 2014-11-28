@@ -59,7 +59,7 @@
                 <div id="new">
                     <div class="news">
                         <?php news(); ?>
-                        <!--<div class="newsTitle">
+                        <!-- TEMPLATE FOR PHP --><!--<div class="newsTitle">  
                             <h3>Jazz Corner celebrates 10th anniversary with benefit concerts</h3>
                             <div class="newsMain">
                                 <p>The concept of a jazz club on Hilton Head Island was a bit 

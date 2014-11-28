@@ -13,14 +13,26 @@ h1{
 #out {
     border-bottom: solid red 2px;
     text-align: center;
+    height: 23px;
+    padding: 5px 10px;
 }
-form {
+/* * * * * MENU * * * * * * */
+#back {
+    display: inline-block;
+    float: left;
+}
+#logout{
+    display: inline-block;
+    float: right;
+}
+
+/*form {
     margin: 0;
     padding: 0;
-}
+}*/
 #content {
     background-color: white;
-    width: 800px;
+    width: 700px;
     height: 600px;
     margin: 0 auto 0 auto;
 }

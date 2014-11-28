@@ -86,7 +86,7 @@ function news(){
             echo '<div class="newsTitle">';
                 echo "<h3>".$row['title']."</h3>";
                 echo "<div class=\"newsMain\">";
-                    echo "<p>".str_replace("\r\n", "</p><p>", $row['desc'])."</p>";
+                    echo "<p>".str_replace("\r\n", "</p><p>", $row['about'])."</p>";
                 echo '</div>';
                 echo '<div class="newsLink">';
                     echo '<a href="'.$row['link'].'" target="_blank">READ MORE</a>';

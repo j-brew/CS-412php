@@ -22,7 +22,7 @@
         <div id="content">
             
             <div id="title">
-                <h1>Welcome Admin</h1>
+                <h1>TJJF Admin</h1>
             </div>
             <div id="out">
                 <form method="POST" action="logout.php">

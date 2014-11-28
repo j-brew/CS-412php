@@ -30,7 +30,10 @@
                 <h1>Admin Concerts</h1>
             </div>
             <div id="out">
-                <form method="POST" action="logout.php">
+                <form id="back" method="POST" action="admin.php">
+                    <input type="submit" value="BACK">
+                </form>
+                <form id="logout" method="POST" action="logout.php">
                     <input type="submit" value="LOG OUT">
                 </form>
             </div>
