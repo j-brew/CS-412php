@@ -26,3 +26,33 @@
     padding: 0px 25px 5px 0px;
 }
 
+#accomplish {
+    width: 874px;
+    height: 400px;
+    margin: 0 auto 0 auto;
+    //border: solid white 1px;
+}
+#current {
+    display: inline-block;
+    border-right: solid white 1px;
+    padding: 0;
+    margin: 0;
+    width: 290px;
+    height: 390px;
+    float: left;
+}
+#program {
+    display: inline-block;
+    //border: solid yellow 1px;
+    width: 290px;
+    height: 390px;
+}
+#goal {
+    display: inline-block;
+    border-left: solid white 1px;
+    width: 290px;
+    height: 390px;
+    float: right;
+    
+}
+
