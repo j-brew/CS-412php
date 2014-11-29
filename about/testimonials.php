@@ -49,12 +49,8 @@
         
         <div id="main">
             <div id="info">
-                
-                <div id="quotes">
-                    <?php randQuote(); ?>
-                </div>
-                
                 <h2>Testimonials</h2>
+                <?php allQuotes(); ?>
             </div>
         </div>
         

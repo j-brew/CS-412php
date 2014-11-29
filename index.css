@@ -161,7 +161,15 @@ body {
     border: solid red 1px;
     background-color: yellow;
 }
-#author{
+.quotes {
+    text-align: center;
+    width: 800px;
+    padding: 0px;
+    margin: 0 auto 10px auto;
+    border: solid red 1px;
+    background-color: yellow;
+}
+.author{
     font-weight: bold;
     padding: 0px;
     margin: 0 auto 0 auto;
@@ -169,7 +177,7 @@ body {
     //width: 200px;
     display: inline-block;
 }
-#author p{
+.author p{
     padding: 0;
     margin: 0 auto 0 auto;
 }
