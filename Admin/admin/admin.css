@@ -60,7 +60,7 @@ textarea {
 #save input {
     width: 100px;
 }
-/* * * * * GALLERY * * * * * */
+/* * * * * ADD GALLERY * * * * * */
 #upfile {
     text-align: center;
     border: solid black 1px;
@@ -74,6 +74,39 @@ hr {
     height: 1px;
     background-color: purple;
 }
+/* * * * * DROP GALLERY * * * * * */
+#dropfile {
+    text-align: center;
+    border: solid black 1px;
+    width: 650px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+}
+.pic {
+    //border-top: solid red 1px;
+    border-bottom: solid red 1px;
+    display: inline-block;
+    width: 160px;
+    height: 130px;
+    
+}
+.chbox {
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 0 auto;
+    //border: solid red 1px;
+    //background-color: red;
+}
+.line {
+    display: block;
+    width: 120px;
+    height:100px;
+    margin: 0 auto 0 auto;
+    //border: solid red 1px;
+    //background-color: red;
+}
 
 /* * * * * CONCERTS * * * * * */
 #info {
@@ -81,4 +114,13 @@ hr {
     width: 350px;
     margin: 10px auto 0 auto;
     padding: 10px;
+}
+
+/* * * * * FOOTER * * * * * */
+#footer {
+    border-bottom: solid red 2px;
+    text-align: center;
+    height: 20px;
+    //padding: 5px 10px;
+    margin: 10px 0;
 }
