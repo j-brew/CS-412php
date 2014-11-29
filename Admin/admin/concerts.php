@@ -1,19 +1,18 @@
-<?php
-//include 'login.php';
-//include 'phpfiles/concertsUpload.php';
+<?php include 'login.php';
 
-session_start();
-if (!isset($_SESSION['IPaddress'])) {
-    echo 'session IP is NOT set';
-} else {
-    echo "<p>previous session time = " . $_SESSION['sessionTime'] . "</p>";
-    echo "current time = " . time();
-    //echo "calculation = ".($_SESSION['sessionTime']-time());
-    if ((time() - $_SESSION['sessionTime']) > 30) {
-        echo "<p>session expired</p>";
+    session_start();
+    if (!isset($_SESSION['IPaddress'])){
+        echo 'session IP is NOT set';    
     }
-}
-include 'phpfiles/concertsUpload.php';
+    else{
+        echo "<p>previous session time = ".$_SESSION['sessionTime']."</p>";
+        echo "current time = ".time();
+        //echo "calculation = ".($_SESSION['sessionTime']-time());
+        if ((time()-$_SESSION['sessionTime']) > 30){
+          echo "<p>session expired</p>";  
+        
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +25,7 @@ include 'phpfiles/concertsUpload.php';
     </head>
     <body>
         <div id="content">
-
+            
             <div id="title">
                 <h1>Admin Concerts</h1>
             </div>
@@ -38,33 +37,23 @@ include 'phpfiles/concertsUpload.php';
                     <input type="submit" value="LOG OUT">
                 </form>
             </div>
-
+            
             <div id="info">
-                <form method="POST" action="" enctype="multipart/form-data">
+                <form method="POST" action="">
                     <label>Performer : </label><br>
                     <input class="txtbox" type="text" name="artist" placeholder="performer ...">
                     <hr>
                     <label>Date : </label><br>
-                    <input class="txtboxYear" type="text" name="dateY" placeholder="yyyy">
-                    <input class="txtboxYear" type="text" name="dateM" placeholder="mm">
-                    <input class="txtboxYear" type="text" name="dateD" placeholder="dd">  
+                    <input class="txtbox" type="date" name="date" placeholder="yyyy/mm/dd">
                     <hr>
                     <label>Time : </label><br>
-                    <input class="txtboxTime" type="text" name="timeH" placeholder="HH">
-                    <input class="txtboxTime" type="text" name="timeM" placeholder="MM">
-                    <select name="ampm">
-                        <option value="pm">pm</option>
-                        <option value="am">am</option>
-                    </select>
+                    <input class="txtbox" type="time" name="time" placeholder="XX:XXpm">
                     <hr>
                     <label>About : </label><br>
                     <textarea name="about" rows="5" cols="40" placeholder="about ..."></textarea>
                     <hr>
                     <label>Price : </label><br>
                     <input class="txtbox" type="number" name="price" placeholder="00.00">
-                    <hr>
-                    <label>at : </label><br>
-                    <input class="txtbox" type="text" name="at" placeholder="place">
                     <hr>
                     <label>Tickets at : </label><br>
                     <input class="txtbox" type="text" name="link" placeholder="www.site.com">
@@ -77,15 +66,10 @@ include 'phpfiles/concertsUpload.php';
                     <hr>
                     <div id="save">
                         <input type="submit" value="SAVE">
-                    </div>  
-                    <div>
-                        <?php if ($error != "") { ?>
-                            <p id="error"><?= $error; ?></p>
-                        <?php } ?>
-                    </div>
+                    </div>                   
                 </form>
             </div>
-
+            
         </div> 
     </body>
 </html>
