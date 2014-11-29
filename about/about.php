@@ -27,7 +27,7 @@
                     <li><a href="../index.php">HOME</a></li>
                     <li><a href="about.php">ABOUT US</a>
                         <ul>
-                            <li><a href="concerts.php">Concerts</a></li>
+                            <li><a href="testimonials.php">Testimonials</a></li>
                             <li><a href="news.php">In The News</a></li>
                         </ul>
                     </li>
@@ -90,39 +90,43 @@
                 <hr>
                 
                 <h2>JJF Accomplishments </h2>
-                <h3>Past and Present Programs</h3>
-                <ul>
-                    <li>Summer camps for students</li>
-                    <li>$10,000 of instruments purchased and distributed</li>
-                    <li>Clinics and workshops for middle school and high school students</li>
-                    <li>Workshop for 100 5th Graders</li>
-                    <li>Annual scholarship program at High School</li>
-                    <li>Donated funds to Hilton Head High School and Hilton Head 
-                        Christian Academy for furthering jazz education</li>
-                    <li>Outreach concerts in private communities </li>
-                </ul>
+                <div id="accomplish">
+                    <div id="current">
+                        <h3>Past and Present Programs</h3>
+                        <ul>
+                            <li>Summer camps for students</li>
+                            <li>$10,000 of instruments purchased and distributed</li>
+                            <li>Clinics and workshops for middle school and high school students</li>
+                            <li>Workshop for 100 5th Graders</li>
+                            <li>Annual scholarship program at High School</li>
+                            <li>Donated funds to Hilton Head High School and Hilton Head 
+                                Christian Academy for furthering jazz education</li>
+                            <li>Outreach concerts in private communities </li>
+                        </ul>
+                    </div>
                 
-                <hr>
-                
-                <h3>Programs</h3>
-                <ul>
-                    <li>Patron presented concerts </li>
-                    <li>Outreach concerts at schools and private communities 
-                        partially sponsored by JJF</li>
-                    <li>Community lectures presented about The History of Jazz 
-                        held throughout public and private locations in the 
-                        LowCountry</li>
-                </ul>
-                
-                <hr>
-                
-                <h3>Goals</h3>
-                <ul>
-                    <li>To continue to raise funds for youth and school programs</li>
-                    <li>To educate listeners</li>
-                    <li>o broaden the audience for Jazz</li>
-                    <li>To present and showcase quality Jazz on Hilton Head Island</li>
-                </ul>
+                    <div id="program">
+                    <h3>Programs</h3>
+                        <ul>
+                            <li>Patron presented concerts </li>
+                            <li>Outreach concerts at schools and private communities 
+                                partially sponsored by JJF</li>
+                            <li>Community lectures presented about The History of Jazz 
+                                held throughout public and private locations in the 
+                                LowCountry</li>
+                        </ul>
+                    </div>
+
+                    <div id="goal">
+                    <h3>Goals</h3>
+                        <ul>
+                            <li>To continue to raise funds for youth and school programs</li>
+                            <li>To educate listeners</li>
+                            <li>o broaden the audience for Jazz</li>
+                            <li>To present and showcase quality Jazz on Hilton Head Island</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         

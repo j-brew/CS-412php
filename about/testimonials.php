@@ -4,7 +4,7 @@
 
 <html>
     <head>
-        <title>Concerts</title>
+        <title>Testimonials</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../index.css">
@@ -28,7 +28,7 @@
                     <li><a href="../index.php">HOME</a></li>
                     <li><a href="about.php">ABOUT US</a>
                         <ul>
-                            <li><a href="concerts.php">Concerts</a></li>
+                            <li><a href="testimonials.php">Testimonials</a></li>
                             <li><a href="news.php">In The News</a></li>
                         </ul>
                     </li>
@@ -49,12 +49,8 @@
         
         <div id="main">
             <div id="info">
-                
-                <div id="quotes">
-                    <?php randQuote(); ?>
-                </div>
-                
-                <h2>Concerts</h2>
+                <h2>Testimonials</h2>
+                <?php allQuotes(); ?>
             </div>
         </div>
         

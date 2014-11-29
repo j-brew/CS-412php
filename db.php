@@ -1,5 +1,29 @@
 <?php
 
+function allQuotes(){
+    # gets all the quotes from the database
+    include 'dbInfo.php';
+    
+    $connection = mysqli_connect($host, $user, $password, $dbName, $port);    
+    if (mysqli_connect_error()){
+        die("<p><b>Failed to connect to Database</b></p>"); // exits
+    }
+    
+    $query = "SELECT * FROM quotes";
+    $result = mysqli_query($connection, $query);
+    
+    while ($row = mysqli_fetch_row($result)){
+        echo '<div class="quotes">';
+                echo "<q>".$row[1]."</q><br>";     // quote
+                echo "<div class=author>";
+                    echo "<p>".$row[2]."</p>";  // author
+                    echo "<p>".$row[3]."</p>";  // from
+                echo "</div>";
+        echo '</div>';
+    }
+    mysqli_close($connection);
+}
+
 function randQuote(){
     # gets random quote from the database
     include 'dbInfo.php';
@@ -14,7 +38,7 @@ function randQuote(){
     $row = mysqli_fetch_row($result);
     
     echo "<q>".$row[1]."</q><br>";     // quote
-    echo "<div id=author>";
+    echo "<div class=author>";
             echo "<p>".$row[2]."</p>";  // author
     echo "</div>";
     
