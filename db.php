@@ -17,6 +17,8 @@ function randQuote(){
     echo "<div id=author>";
             echo "<p>".$row[2]."</p>";  // author
     echo "</div>";
+    
+    mysqli_close($connection);
 }
 
 function imageSlider() {
@@ -65,8 +67,6 @@ function imageSlider_NoScript() {
         }
         echo"</tr>";
      }
-    
-
     $connection->close();
 }
 
@@ -89,10 +89,83 @@ function news(){
                     echo "<p>".str_replace("\r\n", "</p><p>", $row['about'])."</p>";
                 echo '</div>';
                 echo '<div class="newsLink">';
-                    echo '<a href="'.$row['link'].'" target="_blank">READ MORE</a>';
+                    echo '<a href="http://'.$row['link'].'" target="_blank">READ MORE</a>';
                 echo '</div>';
             echo '</div>';
         }
     }
+    
+    mysqli_close($connection);
+}
+
+function futureShows(){
+    include 'dbInfo.php';
+    
+    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    if (mysqli_connect_error()) {
+        die("<p><b>Failed to connect to Database</b></p>"); // exits
+    }
+    
+    $query = "SELECT * FROM shows WHERE date >= CURDATE()";
+    $result = mysqli_query($connection, $query);
+    
+    if (mysqli_num_rows($result) > 0){
+        #echo "<h1>Shows".mysqli_num_rows($result)."</h1>";
+        while($row = mysqli_fetch_assoc($result)){
+            echo '<div class="show">';
+                echo '<div class="pich">';
+                    echo "<img src=\"".$row['pic']."\" alt=\"book sale\">";
+                echo '</div>';
+                echo '<div class="about">';
+                    echo "<h3>".$row['musician']."</h3>";
+                    echo "<h4>".$row['date']." ".$row['time']."</h4>";
+                    echo "<p>".$row['about']."</p>";
+                    echo "<h4>Tickets are $".$row['price']."</h4>";
+                    echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                    echo "<h4>Or call ".$row['phone']."</h4>";
+                echo '</div>';
+            echo '</div>';
+        }
+    }
+    else{
+        echo "<h1>no shows</h1>";
+    }
+    
+    mysqli_close($connection);
+}
+function pastShows(){
+    include 'dbInfo.php';
+    
+    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    if (mysqli_connect_error()) {
+        die("<p><b>Failed to connect to Database</b></p>"); // exits
+    }
+    
+    $query = "SELECT * FROM shows WHERE date < CURDATE()";
+    $result = mysqli_query($connection, $query);
+    
+    if (mysqli_num_rows($result) > 0){
+        #echo "<h1>Shows".mysqli_num_rows($result)."</h1>";
+        while($row = mysqli_fetch_assoc($result)){
+            echo '<div class="show">';
+                echo '<div class="pich">';
+                    echo "<img src=\"".$row['pic']."\" alt=\"book sale\">";
+                echo '</div>';
+                echo '<div class="about">';
+                    echo "<h3>".$row['musician']."</h3>";
+                    echo "<h4>".$row['date']." ".$row['time']."</h4>";
+                    echo "<p>".$row['about']."</p>";
+                    echo "<h4>Tickets are $".$row['price']."</h4>";
+                    echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                    echo "<h4>Or call ".$row['phone']."</h4>";
+                echo '</div>';
+            echo '</div>';
+        }
+    }
+    else{
+        echo "<h1>no shows</h1>";
+    }
+    
+    mysqli_close($connection);
 }
 

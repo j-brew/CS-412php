@@ -39,7 +39,35 @@
             </div>
             
             <div id="info">
-
+                <form method="POST" action="">
+                    <label>Performer : </label><br>
+                    <input class="txtbox" type="text" name="artist" placeholder="performer ...">
+                    <hr>
+                    <label>Date : </label><br>
+                    <input class="txtbox" type="date" name="date" placeholder="yyyy/mm/dd">
+                    <hr>
+                    <label>Time : </label><br>
+                    <input class="txtbox" type="time" name="time" placeholder="XX:XXpm">
+                    <hr>
+                    <label>About : </label><br>
+                    <textarea name="about" rows="5" cols="40" placeholder="about ..."></textarea>
+                    <hr>
+                    <label>Price : </label><br>
+                    <input class="txtbox" type="number" name="price" placeholder="00.00">
+                    <hr>
+                    <label>Tickets at : </label><br>
+                    <input class="txtbox" type="text" name="link" placeholder="www.site.com">
+                    <hr>
+                    <label>Phone : </label><br>
+                    <input class="txtbox" type="text" name="phone" placeholder="(xxx) xxx-xxxx">
+                    <hr>
+                    <label>Picture : </label><br>
+                    <input class="txtbox" type="file" name="file1">
+                    <hr>
+                    <div id="save">
+                        <input type="submit" value="SAVE">
+                    </div>                   
+                </form>
             </div>
             
         </div> 

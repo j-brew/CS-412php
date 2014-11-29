@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../index.css">
+        <link rel="stylesheet" type="text/css" href="events.css">
         <script src="../index.js" ></script>
     </head>
     <body>
@@ -53,6 +54,34 @@
                 </div>
                 
                 <h2>Events</h2>
+                <div id="events">
+                    <a href="">Future Shows</a>
+                    <div id="future">
+                        <?php futureShows(); ?>
+                        <!--<div class="show">
+                            <div class="pich">
+                                <img src="../All_image/Jaz/IMG_6905.JPG" alt="book sale">
+                            </div>
+                            <div class="about">
+                                <h3>Deana Martin</h3>
+                                <h4>September 25, 2014 8:00pm</h4>
+                                <p>As part of the Beaufort concert series, The Junior Jazz Foundation 
+                                    presents <b>Deana Martin</b>, the daughter of Rat Pack star Dean Martin. 
+                                    See this fabulous Las Vegas entertainer LIVE at the Beaufort 
+                                    Center for the Arts.
+                                </p>
+                                <h4>Tickets are $45</h4>
+                                <h4>Available at <a href="http://www.uscbcenterforthearts.com" target="_blank">www.uscbcenterforthearts.com</a></h4>
+                                <h4>Or call (843)521-4145</h4>
+                            </div>
+                        </div>-->
+                    </div>
+
+                    <a href="">Past Shows</a>
+                    <div id="past">
+                        <?php pastShows(); ?>
+                    </div>
+                </div>
             </div>
         </div>
         

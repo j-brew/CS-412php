@@ -38,10 +38,13 @@ if (!isset($_SESSION['IPaddress'])) {
                 </form>
             </div>
 
-            <div id="info">
+            <div id="upfile">
                 <form action="" method="post" enctype="multipart/form-data">
                     <input type="file" name="file1">
-                    <input type="submit">
+                    <hr>
+                    <div id="save">
+                        <input type="submit" value="SAVE">
+                    </div>
                 </form>
                 
             <?php if($error != ""){ ?>

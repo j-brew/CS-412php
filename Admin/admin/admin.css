@@ -10,13 +10,13 @@ h1{
     padding: 0;
 }
 
+/* * * * * MENU * * * * * * */
 #out {
     border-bottom: solid red 2px;
     text-align: center;
-    height: 23px;
+    height: 22px;
     padding: 5px 10px;
 }
-/* * * * * MENU * * * * * * */
 #back {
     display: inline-block;
     float: left;
@@ -26,10 +26,7 @@ h1{
     float: right;
 }
 
-/*form {
-    margin: 0;
-    padding: 0;
-}*/
+
 #content {
     background-color: white;
     width: 700px;
@@ -40,12 +37,10 @@ h1{
 /* * * * ADMIN NEWS PAGE * * * * */
 #news {
     border: solid black 1px;
-    width: 500px;
-    height: 300px;
+    width: 350px;
     margin: 10px auto 0 auto;
     padding: 10px;
 }
-
 label {
     margin: 5px;
 }
@@ -65,8 +60,25 @@ textarea {
 #save input {
     width: 100px;
 }
+/* * * * * GALLERY * * * * * */
+#upfile {
+    text-align: center;
+    border: solid black 1px;
+    width: 350px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+}
+
 hr {
     border: none;
     height: 1px;
     background-color: purple;
+}
+
+/* * * * * CONCERTS * * * * * */
+#info {
+    border: solid black 1px;
+    width: 350px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
 }

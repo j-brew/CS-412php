@@ -1,0 +1,51 @@
+
+a {
+    color: white;
+    text-decoration: none;
+}
+#events {
+    border: solid yellow 1px;
+    width: 800px;
+    margin: 0 auto 0 auto;
+}
+.show {
+    display: block;
+    width: 796px;
+    //height: 600px;
+    border: red solid 1px;
+}
+
+#future {
+    border: solid black 1px;
+}
+.pich img{
+    width: 180px;
+    height: 190px;
+}
+.pich {
+    display: inline-block;
+    border: white solid 1px;
+    width: 190px;
+    height: 200px;
+}
+.about {
+    text-align: center;
+    display: inline-block;
+    float: right;
+    border: white solid 1px;
+    width: 590px;
+}
+.about h3 {
+    padding: 0;
+    margin: 0;
+}
+.about h4 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* * * * * * PAST * * * * * */
+#past {
+    border: solid red 1px;
+}
