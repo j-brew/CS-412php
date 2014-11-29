@@ -48,6 +48,14 @@ label {
     margin: 5px;
     width: 300px;
 }
+.txtboxYear{
+   margin: 1px;
+   width: 40px;
+}
+.txtboxTime{
+    margin: 1px;
+    width: 30px;
+}
 textarea {
     margin: 5px;
 }

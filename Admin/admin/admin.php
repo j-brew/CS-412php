@@ -32,12 +32,13 @@
             
             <div id="info">
                 <ul>
-                    <li><a href="gallery.php" >add/delete gallery pictures</a></li>
-                    <li><a href="concerts.php" >add/delete concert updates</a></li>
-                    <li><a href="news.php" >add/delete news articles</li>
+                    <li><a href="gallery.php" >ADD</a> / <a href="dropgallery.php" >DELETE</a> gallery pictures</li>
+                    <li><a href="concerts.php" >ADD</a> / <a href="dropconcerts.php" >DELETE</a> concerts</li>
+                    <li><a href="news.php" >ADD</a> / <a href="dropnews.php">DELETE</a> news articles</li>
                 </ul>
             </div>
             
+            <div id="footer"></div>
         </div> 
         
     </body>

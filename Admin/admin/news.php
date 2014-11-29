@@ -59,6 +59,7 @@
             <?php if($error != ""){ ?>
                     <div id="error"><?= $error; ?></div>
             <?php } ?>
+            <div id="footer"></div>
         </div> 
     </body>
 </html>

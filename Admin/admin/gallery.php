@@ -51,6 +51,7 @@ if (!isset($_SESSION['IPaddress'])) {
                     <p id="error"><?= $error; ?></p>
             <?php } ?>
             </div>
+            <div id="footer"></div>
         </div> 
     </body>
 </html>
