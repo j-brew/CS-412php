@@ -29,7 +29,7 @@
                     <li><a href="../index.php">HOME</a></li>
                     <li><a href="about.php">ABOUT US</a>
                         <ul>
-                            <li><a href="concerts.php">Concerts</a></li>
+                            <li><a href="testimonials.php">Testimonials</a></li>
                             <li><a href="news.php">In The News</a></li>
                         </ul>
                     </li>

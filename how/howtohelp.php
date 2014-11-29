@@ -28,7 +28,7 @@
                     <li><a href="../index.php">HOME</a></li>
                     <li><a href="../about/about.php">ABOUT US</a>
                         <ul>
-                            <li><a href="../about/concerts.php">Concerts</a></li>
+                            <li><a href="../about/testimonials.php">Testimonials</a></li>
                             <li><a href="../about/news.php">In The News</a></li>
                         </ul>
                     </li>
