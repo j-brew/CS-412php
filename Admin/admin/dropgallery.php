@@ -22,7 +22,9 @@ include 'phpfiles/galleryDelete.php';
     <head>
         <meta charset="UTF-8">
         <title>DROP Gallery</title>
-        <link rel="stylesheet" type="text/css" href="admin.css">
+        <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
+        <link rel="stylesheet" type="text/css" href="cssfiles/expand.css">
+        <script type="text/javascript" src="jsfiles/expand.js"></script>
     </head>
     <body>
         <div id="content">

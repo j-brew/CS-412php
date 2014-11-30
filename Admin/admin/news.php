@@ -4,7 +4,8 @@
     
     session_start();
     if (!isset($_SESSION['IPaddress'])){
-        echo '<h1>YOU SHALL NOT PASS !!!!</h1>';    
+        echo '<h1>YOU SHALL NOT PASS !!!!</h1>';
+        echo '<p>if you know the secret knock that it\'s ok :)</p>';
     }
     else{
         echo "<p>previous session time = ".$_SESSION['sessionTime']."</p>";
@@ -22,7 +23,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Admin News</title>
-        <link rel="stylesheet" type="text/css" href="admin.css">
+        <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
     </head>
     <body>
         <h4>CURRENT SESSION</h4>

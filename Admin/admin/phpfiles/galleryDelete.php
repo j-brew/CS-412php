@@ -45,7 +45,7 @@ function getPictures(){
     
     while ($row = mysqli_fetch_row($result)) {
         echo '<div class="pic">';
-            echo "<img class=\"line\" src=\"../../All_image/Jaz/Gallary/".$row['2']."\" alt=\"some awesome picture\"/>";
+            echo "<img class=\"line\" src=\"../../All_image/Jaz/Gallary/".$row['2']."\" data-larger=\"../../All_image/Jaz/Gallary/".$row['2']."\"alt=\"some awesome picture\"/>";
             echo "<input class=\"chbox\" type=\"checkbox\" name=\"gallery[]\" value=\"".$row['0']."\">";
         echo '</div>';
     }

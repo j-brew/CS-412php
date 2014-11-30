@@ -21,7 +21,7 @@ if (!isset($_SESSION['IPaddress'])) {
     <head>
         <meta charset="UTF-8">
         <title>Admin Gallery</title>
-        <link rel="stylesheet" type="text/css" href="admin.css">
+        <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
     </head>
     <body>
         <div id="content">
