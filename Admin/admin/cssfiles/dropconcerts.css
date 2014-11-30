@@ -1,0 +1,57 @@
+#dropconcert {
+    width: 700px;
+    margin: 0 auto 0 auto;
+}
+#future {
+    border: solid black 1px;
+    width: 700px;
+}
+.show {
+    display: block;
+    width: 690px;
+    height: 100px;
+    margin: 5px auto 5px auto;
+    border: red solid 1px;
+}
+.chkbox {
+    display: inline-block;
+    //width: 15px;
+    //height: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
+    float: left;
+
+}
+.pich img{
+    width: 80px;
+    height: 98px;
+}
+.pich {
+    display: inline-block;
+    border: black solid 1px;
+    width: 80px;
+    height: 98px;
+    margin: 0 5px;
+}
+.about {
+    text-align: center;
+    display: inline-block;
+    //float: right;
+    border: green solid 1px;
+    width: 500px;
+    height:96px;
+    overflow: scroll;
+}
+.about h3 {
+    padding: 0;
+    margin: 0;
+}
+.about h4 {
+    padding: 0;
+    margin: 0;
+}
+
+/* * * * * * PAST * * * * * */
+#past {
+    border: solid red 1px;
+}

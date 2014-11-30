@@ -11,6 +11,7 @@ a {
 .show {
     display: block;
     width: 796px;
+    margin-bottom: 10px;
     //height: 600px;
     border: red solid 1px;
 }
@@ -19,21 +20,23 @@ a {
     border: solid black 1px;
 }
 .pich img{
-    width: 180px;
-    height: 190px;
+    width: 190px;
+    height: 180px;
 }
 .pich {
     display: inline-block;
     border: white solid 1px;
     width: 190px;
-    height: 200px;
+    height: 180px;
 }
 .about {
+    overflow: scroll;
     text-align: center;
     display: inline-block;
     float: right;
     border: white solid 1px;
     width: 590px;
+    height: 180px;
 }
 .about h3 {
     padding: 0;
