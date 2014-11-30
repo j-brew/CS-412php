@@ -1,7 +1,7 @@
 <?php
 echo ini_get('display_errors');
 
-include 'phpfiles/gallaryDelete.php';
+include 'phpfiles/galleryDelete.php';
 
 //session_start();
 //if (!isset($_SESSION['IPaddress'])) {
@@ -49,7 +49,11 @@ include 'phpfiles/gallaryDelete.php';
                         <input type="submit" value="DELETE"/>
                     </div>
                 </form>
-                
+            </div>
+            <div>
+                <?php if ($error != "") { ?>
+                    <p id="error"><?= $error; ?></p>
+                <?php } ?>
             </div>
             <div id="footer"></div>
         </div> 
