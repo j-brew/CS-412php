@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("<p><b>Failed to connect to Database</b></p>"); // exits
         }
 
-        $query = "INSERT INTO quotes (quote, author, author_info) VALUES ('".$quote."', '".$author."', '".$info."')";
+        $query = "INSERT INTO quotes (quote, author, author_info) VALUES ('".$quote."', '- ".$author."', '".$info."')";
         $result = mysqli_query($connection, $query);
         
         if ($result === TRUE){
