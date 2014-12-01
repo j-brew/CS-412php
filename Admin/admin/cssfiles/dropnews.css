@@ -1,0 +1,30 @@
+#dropnews {
+    width: 600px;
+    //height: 500px;
+    border: solid black 1px;
+    margin: 10px auto 0 auto;
+    padding: 0px;
+    //overflow: scroll;
+}
+
+.chkbox {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 40px 0 0 10px;
+    float: left;
+}
+.newsdrop {
+    width: 550px;
+    height: 100px;
+    border: solid black 1px;
+    margin: 10px auto 0 auto;
+}
+.innews {
+    width: 500px;
+    height: 98px;
+    padding: 0 5px 0 5px;
+    //border: solid red 1px;
+    overflow: scroll;
+    display: inline-block;
+}

@@ -35,6 +35,7 @@
                     <li><a href="gallery.php" >ADD</a> / <a href="dropgallery.php" >DELETE</a> gallery pictures</li>
                     <li><a href="concerts.php" >ADD</a> / <a href="dropconcerts.php" >DELETE</a> concerts</li>
                     <li><a href="news.php" >ADD</a> / <a href="dropnews.php">DELETE</a> news articles</li>
+                    <li><a href="quotes.php">ADD</a> / <a href="dropquotes.php">DELETE</a> testimonials</li>
                 </ul>
             </div>
             
