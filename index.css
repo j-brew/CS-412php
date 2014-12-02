@@ -123,19 +123,59 @@ body {
 
 /* *****  DONATE BUTTON ***** */
 #donate {
-    background: white;
-    margin: 5px 10px 5px 0px;
-    padding: 5px 10px 5px 20px;
+    //background: white;
+    //margin: 5px 10px 5px 0px;
+    //padding: 5px 10px 5px 5px;
     //float: right;
     position: fixed;
     top: 250px;
     left: 0px;
-    background-color: coral;
-    border-top: 2px black solid;
-    border-right: 2px black solid;
-    border-bottom: 2px black solid;
+    //background-color: coral;
+    //border-top: 2px black solid;
+    //border-right: 2px black solid;
+    //border-bottom: 2px black solid;
     z-index: 3;
     //height: 142px;
+}
+#fblink {
+    width: 38px;
+    background-color: blue;
+    height: 38px;
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    
+    border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+#fbimg {
+    padding: 0;
+    margin: 0;
+    width: 38px;
+    height: 38px;   
+}
+#dlink {
+    width: 40px;
+    padding: 5px 0 5px 0;
+    background-color: coral;
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    
+    border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
 }
 #donate a{
     text-decoration: none;
