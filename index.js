@@ -4,8 +4,10 @@ window.onload = function () {
     window.onscroll = scrollWithMenu;
     moveDonateButton();
     var col;
-    setTimeout(function(){col = setInterval("collapseDonate()", 80);}, 5000); // starts collapseDonate() 5 seconds after page load
-    setTimeout(function(){clearInterval(col)}, 14000);  // ends collapseDonate() after 9 seconds of execution
+    if (document.getElementById("cinfo")){
+        setTimeout(function(){col = setInterval("collapseDonate()", 30);}, 5000); // starts collapseDonate() 5 seconds after page load
+        setTimeout(function(){clearInterval(col);}, 14000);  // ends collapseDonate() after 9 seconds of execution
+    }
 };
 
 window.onresize = function () {

@@ -12,8 +12,19 @@
         <script src="../index.js" ></script>
     </head>
     <body>
-        <div id="donate">
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=G8MHZAQPP8JLG" target="_blank"><span>D<br/>O<br/>N<br/>A<br/>T<br/>E</span></a>
+        <div id="donate" >
+            <div id="fblink">
+                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/Facebook_logo.png"></a>
+            </div>
+            <div id="dinfo">
+                <div id="dlink">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=G8MHZAQPP8JLG" target="_blank"><span>D<br/>O<br/>N<br/>A<br/>T<br/>E</span></a>
+                </div>
+            
+                <div id="cinfo">
+                    <span>Help<br>The<br>Junior Jazz<br>Foundation<br>by<br>clicking<br>Donate</span>
+                </div>
+            </div>
         </div>
         
         <div id="topbanner">
@@ -21,7 +32,7 @@
                 <img id="logo" src="../pic/logo_139x87.jpg" alt="logo">
             </div>
         </div>
-        
+        <div id="support"></div>
         <div id="menu">
             <div id="menuNav">
                 <ul id="startMenu">
@@ -48,7 +59,7 @@
         
         <div id="main">
             <div id="info">
-               <div ></div>
+               
                 <div id="quotes" id="support">
                     <?php randQuote(); ?>
                 </div>
