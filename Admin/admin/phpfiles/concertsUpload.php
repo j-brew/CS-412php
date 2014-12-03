@@ -19,13 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $musician = $_POST['artist'];
     $date = $_POST['dateY'] . "-" . $_POST['dateM'] . "-" . $_POST['dateD'];
     $ampm = $_POST['ampm'];
-    if($ampm == 'am')
-    {
-    $time = $_POST['timeH'] . ":" . $_POST['timeM'] . ":00";
+    if ($ampm == 'am') {
+        $time = $_POST['timeH'] . ":" . $_POST['timeM'] . ":00";
     }
-    else
-    {
-     $time = $_POST['timeH']+12 . ":" . $_POST['timeM'] . ":00";
+    else {
+        $time = $_POST['timeH'] + 12 . ":" . $_POST['timeM'] . ":00";
     }
     $about = $_POST['about'];
     $price = $_POST['price'];
@@ -40,8 +38,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $error = "<p style=\"color:red;\"> CONNECTION ERROR " . mysqli_error($connection) . "<br>" . $connection->error . "</p>";
     }
-
-
     if (is_uploaded_file($_FILES['file1']['tmp_name'])) {
         $target_dir = "../../All_image/Jaz/concerts/";
         $result = move_uploaded_file($_FILES['file1']['tmp_name'], $target_dir . basename($_FILES['file1']['name']));

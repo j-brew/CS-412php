@@ -51,7 +51,9 @@ function futureShows(){
                 echo '</div>';
                 echo '<div class="about">';
                     echo "<h3>".$row['musician']."</h3>";
-                    echo "<h4>".$row['date']." ".$row['time']."</h4>";
+                    $Date = date('m/d/Y', strtotime($row['date']));
+                    $Time =date("h:i A", strtotime($row['time']));
+                    echo "<h4>".$Date." ".$Time."</h4>";
                     echo "<p>".$row['about']."</p>";
                     echo "<h4>Tickets are $".$row['price']."</h4>";
                     echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
@@ -89,7 +91,9 @@ function pastShows(){
                 echo '</div>';
                 echo '<div class="about">';
                     echo "<h3>".$row['musician']."</h3>";
-                    echo "<h4>".$row['date']." ".$row['time']."</h4>";
+                    $Date = date('m/d/Y', strtotime($row['date']));
+                    $Time =date("h:i A", strtotime($row['time']));
+                    echo "<h4>".$Date." ".$Time."</h4>";
                     echo "<p>".$row['about']."</p>";
                     echo "<h4>Tickets are $".$row['price']."</h4>";
                     echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
