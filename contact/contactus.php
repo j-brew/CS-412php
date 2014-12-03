@@ -15,7 +15,14 @@
     </head>
     <body>
         <div id="donate">
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=G8MHZAQPP8JLG" target="_blank"><span>D<br/>O<br/>N<br/>A<br/>T<br/>E</span></a>
+            <div id="fblink">
+                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/Facebook_logo.png"></a>
+            </div>
+            <div id="">
+                <div id="dlink"> <!-- test page -->
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=G8MHZAQPP8JLG" target="_blank"><span>D<br/>O<br/>N<br/>A<br/>T<br/>E</span></a>
+                </div>
+            </div>
         </div>
         
         <div id="topbanner">

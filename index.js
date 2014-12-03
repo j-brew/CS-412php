@@ -1,8 +1,11 @@
 
 
 window.onload = function () { 
-   window.onscroll = scrollWithMenu;
-   moveDonateButton();
+    window.onscroll = scrollWithMenu;
+    moveDonateButton();
+    var col;
+    setTimeout(function(){col = setInterval("collapseDonate()", 80);}, 5000); // starts collapseDonate() 5 seconds after page load
+    setTimeout(function(){clearInterval(col)}, 14000);  // ends collapseDonate() after 9 seconds of execution
 };
 
 window.onresize = function () {
@@ -37,5 +40,20 @@ function moveDonateButton(){
         var midWinHight = hWindow / 2;
         var midBut = midWinHight - (donateButton.clientHeight / 2 ) -6 ; // client height not correct, -6 corrects the height
         donateButton.style.top =  midBut+"px";
+    }
+};
+
+function collapseDonate(){
+    var dinfo = document.getElementById("dinfo");
+    var width = dinfo.offsetWidth;
+    //alert("the width of dinfo is : "+width);
+    if (width > 40){
+        width = width - 2;
+        console.log("the width of dinfo is : "+width);
+        //alert("the width of dinfo is : "+width);
+        dinfo.style.width = width+"px";
+    }
+    else{
+        console.log("this is the end my friend");
     }
 };

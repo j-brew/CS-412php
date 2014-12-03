@@ -139,8 +139,9 @@ body {
 }
 #fblink {
     width: 38px;
-    background-color: blue;
     height: 38px;
+    margin-bottom: 10px;
+    background-color: blue;
     border-top: solid black 2px;
     border-right: solid black 2px;
     border-bottom: solid black 2px;
@@ -160,14 +161,18 @@ body {
     height: 38px;   
 }
 #dlink {
+    position:relative;
     width: 40px;
+    //height: 140px;
     padding: 5px 0 5px 0;
     background-color: coral;
     border-top: solid black 2px;
     border-right: solid black 2px;
     border-bottom: solid black 2px;
     text-align: center;
-    margin: 10px 0 0 0;
+    z-index: 3;
+    //margin: 10px 0 0 0;
+    //opacity: .99;
     
     border-top-right-radius: 5px;
     -moz-border-top-right-radius: 5px;
@@ -181,6 +186,39 @@ body {
     text-decoration: none;
     font-size: larger;
     font-weight: 900;
+}
+#dinfo {
+    display: inline;
+    float: right;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 140px;           /* show and hide donate info*/
+    height: 145px;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    z-index: 1;
+    
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    
+    border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+#cinfo {
+    //display: inline;
+    padding: 0 5px 0 0;
+    text-align: center;
+    position: relative;
+    float:right;
+    top: -138px;        /* adjusts height of*/
+    width: 80px;
+    //height: 120px;
+    //border: solid blue 1px;
+    z-index: 1;
 }
 
     /* *****  QUOTES ***** */
