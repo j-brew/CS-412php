@@ -55,7 +55,9 @@
                     <?php randQuote(); ?>
                 </div>
                 
-                <h2>In The News</h2>
+                <div class="h2title">
+                    <h2>In The News</h2>
+                </div>
                 <div id="new">
                     <div class="news">
                         <?php news(); ?>

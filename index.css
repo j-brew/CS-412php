@@ -233,16 +233,19 @@ body {
     background-size: cover;
     //opacity: .2;
     width: 900px;
-    height: auto;
+    //height: auto;
     margin: 0px auto 0px auto;
-    padding: 10px 0 10px 0;
+    padding: 0 0 0 0;
+    //border: yellow solid 1px;
 }
 #info {
-    background-color: grey;
+    //background-color: grey;
     background: rgba(0,0,0,0.5); /* and opacity*/
+    padding: 12px 0 12px 0;
+    margin: 0px 0 0 0;
     //opacity: 0.9;
     //background:;
-    border: solid red 2px;
+    //border: solid red 2px;
     //height: auto;
     //opacity: .8;
     //z-index: 3;
@@ -250,18 +253,20 @@ body {
 #quotes{
     text-align: center;
     width: 800px;
-    padding: 0px;
-    margin: 0 auto 0 auto;
-    border: solid red 1px;
-    background-color: yellow;
+    padding: 10px;
+    margin: 5px auto 0 auto;
+    //border: solid red 1px;
+    //background-color: yellow;
+    background: rgb(240,240,240);
 }
 .quotes {
     text-align: center;
     width: 800px;
-    padding: 0px;
-    margin: 0 auto 10px auto;
-    border: solid red 1px;
-    background-color: yellow;
+    padding: 10px;
+    margin: 5px auto 0px auto;
+    //border: solid red 1px;
+    //background-color: yellow;
+    background: rgb(240,240,240);
 }
 .author{
     font-weight: bold;

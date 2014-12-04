@@ -123,7 +123,7 @@ function news(){
                     echo "<p>".str_replace("\r\n", "</p><p>", $row['about'])."</p>";
                 echo '</div>';
                 echo '<div class="newsLink">';
-                    echo '<a href="http://'.$row['link'].'" target="_blank">READ MORE</a>';
+                    echo '<a href="http://'.$row['link'].'" target="_blank">READ MORE ...</a>';
                 echo '</div>';
             echo '</div>';
         }
