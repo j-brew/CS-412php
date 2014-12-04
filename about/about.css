@@ -1,11 +1,11 @@
-#main #info .p2{
+/*#main #info .p2{
     display: inline-block;
     width: 540px;
     //padding: 0px 25px 0px 25px;
     margin: 0px 0px 20px 25px;
     text-align: justify;
     //border: red solid 1px;
-}
+}*/
 
     /* *****  PART OF ABOUT US ***** */
 #info{
@@ -27,32 +27,49 @@
 }
 
 #accomplish {
-    width: 874px;
-    height: 400px;
-    margin: 0 auto 0 auto;
+    
+    //overflow: visible;
+    //width: 874px;
+    //height: 400px;
+    padding: 5px 0 15px 0;
+    margin: 0px 25px 25px 25px;
     //border: solid white 1px;
+    background: rgba(255,255,255,0.3);
 }
 #current {
     display: inline-block;
-    border-right: solid white 1px;
+    //border-right: solid white 1px;
+    background: rgba(216,216,216,.8);
     padding: 0;
-    margin: 0;
-    width: 290px;
-    height: 390px;
+    margin-left: 15px;
+    width: 255px;
+    height: 420px;
     float: left;
 }
 #program {
     display: inline-block;
     //border: solid yellow 1px;
-    width: 290px;
-    height: 390px;
+    background: rgba(216,216,216,.8);
+    margin-left: 15px;
+    width: 255px;
+    height: 420px;
 }
 #goal {
     display: inline-block;
-    border-left: solid white 1px;
-    width: 290px;
-    height: 390px;
+    //border-left: solid white 1px;
+    width: 255px;
+    margin-right: 25px;
+    height: 420px;
     float: right;
-    
+    background: rgba(216,216,216,.8);
 }
 
+.h2title{
+    background: rgba(255,255,255,0.3);
+    margin: 15px 25px 0 25px;
+    padding: 5px 5px 5px 5px;
+}
+.h2title>h2 {
+    background: rgba(216,216,216,.8);
+    margin: 10px 10px 10px 10px;
+}
