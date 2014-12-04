@@ -14,7 +14,7 @@
     <body>
         <div id="donate">
             <div id="fblink">
-                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/Facebook_logo.png"></a>
+                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/facebook_logo.png"></a>
             </div>
             <div id="">
                 <div id="dlink"> <!-- test page -->
@@ -55,7 +55,9 @@
                     <?php randQuote(); ?>
                 </div>
                 
-                <h2>In The News</h2>
+                <div class="h2title">
+                    <h2>In The News</h2>
+                </div>
                 <div id="new">
                     <div class="news">
                         <?php news(); ?>

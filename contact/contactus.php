@@ -17,7 +17,7 @@
     <body>
         <div id="donate">
             <div id="fblink">
-                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/Facebook_logo.png"></a>
+                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/facebook_logo.png"></a>
             </div>
             <div id="">
                 <div id="dlink"> <!-- test page -->

@@ -8,12 +8,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../index.css">
+        <link rel="stylesheet" type="text/css" href="about.css">
         <script src="../index.js" ></script>
     </head>
     <body>
         <div id="donate">
             <div id="fblink">
-                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/Facebook_logo.png"></a>
+                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="../pic/facebook_logo.png"></a>
             </div>
             <div id="">
                 <div id="dlink"> <!-- test page -->
@@ -56,7 +57,9 @@
         
         <div id="main">
             <div id="info">
-                <h2>Testimonials</h2>
+                <div class="h2title">
+                    <h2>Testimonials</h2>
+                </div>
                 <?php allQuotes(); ?>
             </div>
         </div>

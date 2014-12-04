@@ -11,7 +11,7 @@
     <body>
         <div id="donate" >
             <div id="fblink">
-                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="pic/Facebook_logo.png"></a>
+                <a href="https://www.facebook.com/JuniorJazzFoundation" target="_blank"><img id="fbimg" alt="facebook link" src="pic/facebook_logo.png"></a>
             </div>
             <div id="dinfo">
                 <div id="dlink">
@@ -59,14 +59,15 @@
         <div id="main">
             <div id="info">
                 <img id="trumpet" src="pic/teachtrumpet.jpg" alt="junior trumpet">
-                <div id="intro">
-                    <p class="p1">The Junior Jazz Foundation (JJF) is the philanthropic outreach 
-                        effort of The Jazz Corner on beautiful Hilton Head Island,SC.</p>
-                    <p class="p1">We believe that the original American art form of jazz music 
-                        is important. Our focus is to educate and enable young 
-                        musicians in our community by supplying instruments, 
-                        scholarships, classes and seminars.</p>
-                
+                <div class="intro">
+                    <div class="infoP">
+                        <p class="p1">The Junior Jazz Foundation (JJF) is the philanthropic outreach 
+                            effort of The Jazz Corner on beautiful Hilton Head Island,SC.</p>
+                        <p class="p1">We believe that the original American art form of jazz music 
+                            is important. Our focus is to educate and enable young 
+                            musicians in our community by supplying instruments, 
+                            scholarships, classes and seminars.</p>
+                    </div>
                     <div id="centerBook">
                         <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink">  
                             <img src="All_image/Jaz/IMG_6905.JPG" alt="book sale">
