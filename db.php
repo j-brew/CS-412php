@@ -72,6 +72,14 @@ function imageSlider_NoScript() {
 
     $query = "SELECT * FROM ImageInfo";
     $result = mysqli_query($connection, $query);
+    
+       
+    while ($row = mysqli_fetch_row($result)) {
+        echo '<div class="pic">';
+            echo "<img class=\"line\" src=\"../All_image/Jaz/Gallary/".$row['2']."\" data-larger=\"../All_image/Jaz/Gallary/".$row['2']."\"alt=\"some awesome picture\"/>";
+        echo '</div>';
+    }
+    /*
     $numRow=mysqli_num_rows($result);
     $numRow = $numRow / 4;
     $remainder = $numRow % 4;
@@ -91,6 +99,8 @@ function imageSlider_NoScript() {
         }
         echo"</tr>";
      }
+     * 
+     */
     $connection->close();
 }
 
