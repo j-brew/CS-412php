@@ -45,4 +45,3 @@ function validateForm()
        
    
 }
-window.onload = init;
