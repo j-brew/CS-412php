@@ -315,7 +315,7 @@ h3{
 .introWide {
     //display: inline-block;
     margin: 0 25px 0 25px;
-    padding: 5px;
+    padding: 5px 0 5px 0;
     //width: 850px;
     //height: 380px;
     

@@ -59,10 +59,13 @@
                 <div id="quotes">
                     <?php randQuote(); ?>
                 </div>
-                
-                <h2>Events</h2>
+
+                <div class="h2title">
+                    <h2>Events</h2>
+                </div>
                 <div id="events">
-                    <a href="">Future Shows</a>
+                    <a href="#">Hide Future Events</a>
+                    <div class="divider"></div>
                     <div id="future">
                         <?php futureShows(); ?>
                         <!--<div class="show">
@@ -83,8 +86,10 @@
                             </div>
                         </div>-->
                     </div>
-
-                    <a href="">Past Shows</a>
+                    <hr>
+                    
+                    <a id="pshow" href="">Show Past Events</a>
+                    <div class="divider"></div>
                     <div id="past">
                         <?php pastShows(); ?>
                     </div>

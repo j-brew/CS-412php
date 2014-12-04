@@ -104,8 +104,8 @@
                 </div>
                 
                 <div class="h2title">
-                        <h2>JJF Accomplishments </h2>
-                    </div>
+                    <h2>JJF Accomplishments </h2>
+                </div>
                 
                 <div id="accomplish">
                     

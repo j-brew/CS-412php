@@ -1,28 +1,53 @@
-#main #info .p2{
+.h2title{
+    background: rgba(255,255,255,0.3);
+    margin: 15px 25px 0 25px;
+    padding: 5px 5px 5px 5px;
+}
+.h2title>h2 {
+    background: rgba(216,216,216,.8);
+    margin: 10px 10px 10px 10px;
+}
+
+/*#main #info .p2{
     display: inline-block;
     width: 540px;
     //padding: 0px 25px 0px 25px;
     margin: 0px 0px 20px 25px;
     text-align: justify;
     //border: red solid 1px;
-}
+}*/
     /* *****  PART OF HOW TO HELP ***** */
 #leftcol{
     display: inline-block;
-    width: 360px;
+    width: 310px;
     //border: yellow 1px solid;
-    margin-left: 25px;
+    margin-left: 15px;
+    padding: 10px;
     text-align: justify;
+    background: rgba(216,216,216,.8);
 }
 #rightcol{
     display: inline-block;
-    width: 460px;
+    width: 450px;
     float: right;
     //border: yellow 1px solid;
-    margin-right: 25px;
-    text-align: justify
+    margin-right: 15px;
+    padding: 10px;
+    text-align: justify;
+    background: rgba(216,216,216,.8);
 }
-#rightcol h3{
+#rightcol>h4{
     text-align: center;
 }
+#rightcol>p{
+    padding: 0;
+    margin: 0;
+    //border: solid red 1px;
+}
 
+#benefits {
+    padding: 5px 0 15px 0;
+    margin: 0px 25px 25px 25px;
+    //border: solid white 1px;
+    background: rgba(255,255,255,0.3);
+}

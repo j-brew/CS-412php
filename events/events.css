@@ -1,23 +1,42 @@
-
-a {
-    color: white;
-    text-decoration: none;
+.h2title{
+    background: rgba(255,255,255,0.3);
+    margin: 15px 25px 0 25px;
+    padding: 5px 5px 5px 5px;
 }
+.h2title>h2 {
+    background: rgba(216,216,216,.8);
+    margin: 10px 10px 10px 10px;
+}
+
+/*a {
+    color: black;
+    text-decoration: none;
+}*/
 #events {
-    border: solid yellow 1px;
-    width: 800px;
-    margin: 0 auto 0 auto;
+    //border: solid yellow 1px;
+    //width: 800px;
+    margin: 0 25px 0 25px;
+    padding-bottom: 10px;
+    background: rgba(255,255,255,0.3);
 }
 .show {
     display: block;
-    width: 796px;
-    margin-bottom: 10px;
+    //width: 796px;
+    margin: 0px auto 10px auto;
+    padding: 10px;
+    overflow: auto;
     //height: 600px;
-    border: red solid 1px;
+    //border: green solid 1px;
+}
+.divider {
+    border-top: solid black 4px;
 }
 
 #future {
-    border: solid black 1px;
+    display: block;
+    //border-top: solid black 2px;
+    margin: 5px 15px 0 15px;
+    background: rgba(216,216,216,.8);
 }
 .pich img{
     width: 190px;
@@ -30,13 +49,15 @@ a {
     height: 180px;
 }
 .about {
-    overflow: scroll;
+    overflow: auto;
     text-align: center;
     display: inline-block;
     float: right;
     border: white solid 1px;
-    width: 590px;
-    height: 180px;
+    width: 580px;
+    //height: 350px;
+    padding: 0px;
+    background: rgba(215,215,215,.8);
 }
 .about h3 {
     padding: 0;
@@ -50,5 +71,31 @@ a {
 
 /* * * * * * PAST * * * * * */
 #past {
-    border: solid red 1px;
+    display: block;
+    //border: solid black 1px;
+    margin: 5px 15px 0 15px;
+    padding: 0px;
+    background: rgba(216,216,216,.8);
 }
+#events>a {
+    //display: block;
+    color: black;
+    text-decoration: none;
+    background: white;
+    border: black solid 2px;
+/*    width: 75px;
+    height: 20px;*/
+    margin-left: 25px;
+    padding: 5px 5px 5px 5px;
+}
+/*#fshow {
+    background: white;
+    margin: 15px 25px 0 25px;
+    padding: 5px 5px 5px 5px;
+}
+#pshow {
+    background: white;
+    width: 400px;
+    margin: 55px 25px 0 25px;
+    padding: 5px 5px 5px 5px;
+}*/
