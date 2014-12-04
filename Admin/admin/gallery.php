@@ -22,6 +22,7 @@ if (!isset($_SESSION['IPaddress'])) {
         <meta charset="UTF-8">
         <title>Admin Gallery</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
+        <script type="text/javascript" src="gallery.js"></script>
     </head>
     <body>
         <div id="content">
@@ -39,7 +40,7 @@ if (!isset($_SESSION['IPaddress'])) {
             </div>
 
             <div id="upfile">
-                <form action="" method="post" enctype="multipart/form-data">
+                <form name="imageUpload" onsubmit="validate_fileupload();"action="" method="post" enctype="multipart/form-data">
                     <input type="file" name="file1">
                     <hr>
                     <div id="save">

@@ -25,6 +25,7 @@
         <title>Admin Quotes</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
         <link rel="stylesheet" type="text/css" href="cssfiles/quotes.css">
+        <script type ="text/javascript" src="quotes.js"></script>
     </head>
     <body>
         <h4>CURRENT SESSION</h4>
@@ -43,7 +44,7 @@
             </div>
             
             <div id="quotes">
-                <form method="POST" action="">
+                <form name="quoteForm" onsubmit="validateForm();" method="POST" action="">
                     <label>Quote : </label><br>
                     <textarea name="quote" rows="5" cols="40" placeholder="quote ..."></textarea>
                     <hr>

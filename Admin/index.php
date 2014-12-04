@@ -23,6 +23,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
     </head>
     <body>
         
@@ -37,11 +38,11 @@
                     <ul>  
                         <li>
                             <label>User name : </label>  
-                            <input type="text" name="user" placeholder="user name" required>
+                            <input type="text" name="user" placeholder="user name" id="user" required>
                         </li>
                         <li>
                             <label>Password : </label>  
-                            <input type="password" name="password" placeholder="password" required>
+                            <input type="password" name="password" placeholder="password" id="password" required>
                         </li>
                     </ul>
                     <div id="center">

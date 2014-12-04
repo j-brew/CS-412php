@@ -1,36 +1,32 @@
-function init()
-{
-    var email = document.getElementById("email");
-    email.onsubmit = validateForm;
-}
-
-
 function validateForm()
 {
+    alert("Validate Form");
     var error = false;
+    var message="";
+    
     //check email
-    var fieldValue=document.getElementById("emailID").value;
+    var email = document.forms["formName"]["email"].value;
     var checkEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-    if(!checkEmail.test(fieldValue))
+    if(!checkEmail.test(email))
     {
-        alert("Invalid email address. Please input valid email address.");
+        message+="Invalid email address.\n";
         error = true;
     }
     
     //check subject
-    fieldValue=document.getElementById("subject").value;
-    //var checkSubject = /^[a-zA-Z]\w{0,}$/;
-    if(fieldValue===null)
+    var subject=document.document.forms["formName"]["subject"].value;
+    //var checkSubject = /^\w{1,100}$/;
+    if(subject==""||subject==null)
     {
-        alert("No Subject entered.");
+        message+="No Subject entered.\n";
         error = true;
     }
     
     //check message
-    fieldValue=document.getElementById("message").value;
-    if(fieldValue===null)
+    var msg=document.document.forms["formName"]["message"].value;
+    if(msg==""||msg==null)
     {
-        alert("No Message entered.");
+        message+="No Message entered.\n";
         error = true;
     }
     
@@ -42,9 +38,7 @@ function validateForm()
     
     else
     {
+        alert(message);
         return false;
     }
-       
-   
 }
-window.onload = init;
