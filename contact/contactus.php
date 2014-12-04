@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link rel="stylesheet" type="text/css" href="contactus.css">
         <script src="../index.js" ></script>
+        <script type="text/javascript" src="contactus.js"></script>
     </head>
     <body>
         <div id="donate">
@@ -73,10 +74,10 @@
                 ?>
                 
                 <div id="email">
-                    <form method="POST" action="">
+                    <form name="formName" onsubmit="validateForm();" method="POST" action="">
                         <label>Your email address *</label>
                         <br>
-                        <input class="box" name="email" type="email" required>
+                        <input class="box" name="email" type="email" id="emailID" required>
                         <br>
                         <label>Subject *</label>
                         <br>

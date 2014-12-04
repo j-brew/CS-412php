@@ -1,5 +1,5 @@
 <?php 
-    include 'login.php';
+    //include 'login.php';
     include 'phpfiles/newsUpload.php';
     
     session_start();
@@ -24,6 +24,7 @@
         <meta charset="UTF-8">
         <title>Admin News</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
+        <script type="text/javascript" src="news.js"></script>
     </head>
     <body>
         <h4>CURRENT SESSION</h4>
@@ -42,7 +43,7 @@
             </div>
             
             <div id="news">
-                <form method="POST" action="">
+                <form name="newsForm" onsubmit="validateForm();" method="POST" action="">
                     <label >Title : </label><br>
                     <input class="txtbox" type="text" name="title" placeholder="title ..." required>
                     <hr>

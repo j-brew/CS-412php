@@ -23,6 +23,7 @@ include 'phpfiles/concertsUpload.php';
         <meta charset="UTF-8">
         <title>Admin Concerts</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
+        <script type="text/javascript" src="concerts.js"></script>
     </head>
     <body>
         <div id="content">
@@ -40,40 +41,40 @@ include 'phpfiles/concertsUpload.php';
             </div>
 
             <div id="info">
-                <form method="POST" action="" enctype="multipart/form-data">
+                <form name="myForm" method="POST" onsubmit = "validateForm();" action="" enctype="multipart/form-data">
                     <label>Performer : </label><br>
-                    <input class="txtbox" type="text" name="artist" placeholder="performer ...">
+                    <input class="txtbox" type="text" name="artist" id="artist" placeholder="performer ...">
                     <hr>
                     <label>Date : </label><br>
-                    <input class="txtboxYear" type="text" name="dateY" placeholder="yyyy">
-                    <input class="txtboxYear" type="text" name="dateM" placeholder="mm">
-                    <input class="txtboxYear" type="text" name="dateD" placeholder="dd">  
+                    <input class="txtboxYear" type="text" name="dateY" id="dateY" placeholder="yyyy">
+                    <input class="txtboxYear" type="text" name="dateM" id="dateM" placeholder="mm">
+                    <input class="txtboxYear" type="text" name="dateD" id="dateD" placeholder="dd">  
                     <hr>
                     <label>Time : </label><br>
-                    <input class="txtboxTime" type="text" name="timeH" placeholder="HH">
-                    <input class="txtboxTime" type="text" name="timeM" placeholder="MM">
+                    <input class="txtboxTime" type="text" name="timeH" id="timeH" placeholder="HH">
+                    <input class="txtboxTime" type="text" name="timeM" id="timeM" placeholder="MM">
                     <select name="ampm">
                         <option value="pm">pm</option>
                         <option value="am">am</option>
                     </select>
                     <hr>
                     <label>About : </label><br>
-                    <textarea name="about" rows="5" cols="40" placeholder="about ..."></textarea>
+                    <textarea name="about" id="about" rows="5" cols="40" placeholder="about ..."></textarea>
                     <hr>
                     <label>Price : </label><br>
-                    <input class="txtbox" type="number" name="price" placeholder="00.00">
+                    <input class="txtbox" type="number" name="price" id="price" placeholder="00.00">
                     <hr>
                     <label>at : </label><br>
-                    <input class="txtbox" type="text" name="at" placeholder="place">
+                    <input class="txtbox" type="text" name="at" id="at" placeholder="place">
                     <hr>
                     <label>Tickets at : </label><br>
-                    <input class="txtbox" type="text" name="link" placeholder="www.site.com">
+                    <input class="txtbox" type="text" name="link" id="link" placeholder="www.site.com">
                     <hr>
                     <label>Phone : </label><br>
-                    <input class="txtbox" type="text" name="phone" placeholder="(xxx) xxx-xxxx">
+                    <input class="txtbox" type="text" name="phone" id="phone" placeholder="(xxx) xxx-xxxx">
                     <hr>
                     <label>Picture : </label><br>
-                    <input class="txtbox" type="file" name="file1">
+                    <input class="txtbox" type="file" name="file1" id="file1">
                     <hr>
                     <div id="save">
                         <input type="submit" value="SAVE">
