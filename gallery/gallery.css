@@ -11,9 +11,8 @@ img
     width:100px;
     height:100px;
     
-}
-img:hover
-{
+}.line:hover{
+    
     transition: 500ms ease;
     -webkit-transform: scale(4);
     -moz-transform: scale(4);
