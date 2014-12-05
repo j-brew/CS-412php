@@ -46,17 +46,10 @@ include 'phpfiles/concertsUpload.php';
                     <input class="txtbox" type="text" name="artist" id="artist" placeholder="performer ...">
                     <hr>
                     <label>Date : </label><br>
-                    <input class="txtboxYear" type="text" name="dateY" id="dateY" placeholder="yyyy">
-                    <input class="txtboxYear" type="text" name="dateM" id="dateM" placeholder="mm">
-                    <input class="txtboxYear" type="text" name="dateD" id="dateD" placeholder="dd">  
+                    <input class="txtbox" type="date" name="date" placeholder="yyyy/mm/dd">
                     <hr>
                     <label>Time : </label><br>
-                    <input class="txtboxTime" type="text" name="timeH" id="timeH" placeholder="HH">
-                    <input class="txtboxTime" type="text" name="timeM" id="timeM" placeholder="MM">
-                    <select name="ampm">
-                        <option value="pm">pm</option>
-                        <option value="am">am</option>
-                    </select>
+                    <input class="txtbox" type="time" name="time" placeholder="XX:XXpm">
                     <hr>
                     <label>About : </label><br>
                     <textarea name="about" id="about" rows="5" cols="40" placeholder="about ..."></textarea>

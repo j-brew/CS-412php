@@ -34,7 +34,7 @@
             </div>
             
             <div id="info">
-                <form method="POST" action="">
+                <form name="userForm" onsubmit="validateForm();" method="POST" action="">
                     <ul>  
                         <li>
                             <label>User name : </label>  
