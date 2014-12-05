@@ -14,11 +14,11 @@ function allQuotes(){
     
     while ($row = mysqli_fetch_row($result)){
         echo '<div class="quotes">';
-                echo "<q>".$row[1]."</q><br>";     // quote
-                echo "<div class=author>";
-                    echo "<p>".$row[2]."</p>";  // author
-                    echo "<p>".$row[3]."</p>";  // from
-                echo "</div>";
+            echo "<q>".$row[1]."</q><br>";     // quote
+            echo "<div class=author>";
+                echo "<p>".$row[2]."</p>";  // author
+                echo "<p>".$row[3]."</p>";  // from
+            echo "</div>";
         echo '</div>';
     }
     mysqli_close($connection);
@@ -37,7 +37,14 @@ function randQuote(){
     $result = mysqli_query($connection, $query);
     $row = mysqli_fetch_row($result);
     
-    echo "<q>".$row[1]."</q><br>";     // quote
+    if (strlen($row[1]) > 340){
+        $needle = strpos($row[1], " ", 340);    // shorten quote if over 340 characters
+        $row[1] = substr($row[1], 0, $needle)." ... ";
+        echo "<q>".$row[1]."</q><br>";
+    }
+    else{
+        echo "<q>".$row[1]."</q><br>";     // quote
+    }
     echo "<div class=author>";
             echo "<p>".$row[2]."</p>";  // author
     echo "</div>";
