@@ -15,16 +15,10 @@ if (mysqli_connect_error()) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $imageName = basename($_FILES['file1']['name']);
+       $imageName = basename($_FILES['file1']['name']);
     $musician = $_POST['artist'];
-    $date = $_POST['dateY'] . "-" . $_POST['dateM'] . "-" . $_POST['dateD'];
-    $ampm = $_POST['ampm'];
-    if ($ampm == 'am') {
-        $time = $_POST['timeH'] . ":" . $_POST['timeM'] . ":00";
-    }
-    else {
-        $time = $_POST['timeH'] + 12 . ":" . $_POST['timeM'] . ":00";
-    }
+    $date = $_POST['date'];
+    $time = $_POST['time'];
     $about = $_POST['about'];
     $price = $_POST['price'];
     $at = $_POST['at'];

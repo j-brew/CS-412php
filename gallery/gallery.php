@@ -98,8 +98,9 @@
                 </div> 
                 <hr>
                 <h2>Videos</h2>
-                <div class="video">
-                    <iframe width="500" height="298" src="//www.youtube.com/embed/6qnFcFP80ww" frameborder="0" allowfullscreen></iframe>
+                 <div class="video">
+                          <!-- using flash https://www.youtube.com/v/6qnFcFP80ww?fs=1&amp;hl=en_US-->
+                    <iframe width="500" height="298" src="https://www.youtube.com/v/6qnFcFP80ww?fs=1&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
