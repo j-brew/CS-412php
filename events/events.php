@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link rel="stylesheet" type="text/css" href="events.css">
+        <script src="events.js" ></script>
         <script src="../index.js" ></script>
     </head>
     <body>
@@ -64,7 +65,7 @@
                     <h2>Events</h2>
                 </div>
                 <div id="events">
-                    <a href="#">Hide Future Events</a>
+                    <a id="ftab" href="javascript:hideshow()">Hide Future Events</a>
                     <div class="divider"></div>
                     <div id="future">
                         <?php futureShows(); ?>
@@ -88,7 +89,7 @@
                     </div>
                     <hr>
                     
-                    <a id="pshow" href="">Show Past Events</a>
+                    <a id="ptab" href="javascript:hideshow()">Show Past Events</a>
                     <div class="divider"></div>
                     <div id="past">
                         <?php pastShows(); ?>

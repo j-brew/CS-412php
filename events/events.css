@@ -71,7 +71,7 @@
 
 /* * * * * * PAST * * * * * */
 #past {
-    display: block;
+    display: none;
     //border: solid black 1px;
     margin: 5px 15px 0 15px;
     padding: 0px;
