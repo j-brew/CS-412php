@@ -1,6 +1,9 @@
 
     /* *****  CONTACT US  ***** */
-    
+a {
+     color: black;  
+     text-decoration: none;
+} 
 input{
      margin: 10px 15px 5px 5px;   
 }
@@ -20,9 +23,9 @@ label{
     background-color: white;
     display: inline-block;
     width: 350px;
-    height: 260px;
+    //height: 260px;
     border: black solid 3px;
-    margin: 0 50px;
+    margin: 0 20px;
     //padding: 5px;
     text-align: center;
 }
@@ -41,9 +44,29 @@ textarea {
     display: inline-block;
     text-align: center;
     width: 300px;
-    height: 150px;
+    //height: 150px;
     float: right;
     //padding: 10px 10px;
-    margin: 0 50px;
+    margin: 0 20px;
     border: black solid 3px;
+}
+.h2title{
+    background: rgba(255,255,255,0.3);
+    margin: 15px 25px 0 25px;
+    padding: 5px 5px 5px 5px;
+}
+.h2title>h2 {
+    background: rgba(216,216,216,.8);
+    margin: 10px 10px 10px 10px;
+}
+#contact {
+    //border: solid red 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 0px 25px 10px 25px;
+    padding: 15px 15px 15px 15px;
+}
+#incontact {
+    //border: solid yellow 1px;
+    background: rgba(216,216,216,.8);
+    padding: 15px 15px;
 }

@@ -67,3 +67,7 @@
     background: rgba(216,216,216,.8);
     margin: 10px 10px 10px 10px;
 }
+a {
+    color: black;  
+    text-decoration: none;
+}

@@ -61,13 +61,12 @@
             <div id="info">
                
                 <div id="quotes" id="support">
-                    <?php randQuote(); ?>
+                    <a href="../about/testimonials.php"><?php randQuote(); ?></a>
                 </div>
                 
                 <div class="h2title">
                     <h2>Supporting the JJF</h2>
                 </div>
-                
                 <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink" style="width:324px;height:250px">  
                     <img id="historyBook" src="../All_image/Jaz/IMG_6905.JPG" alt="book sale">
                 </a>
@@ -88,7 +87,6 @@
                         </p>
                     </div>
                 </div>
-                
                 <div class="introWide">
                     <div class="infoP">
                         <h3>Tax-deductible contributions support:</h3>

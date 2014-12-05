@@ -99,3 +99,7 @@
     margin: 55px 25px 0 25px;
     padding: 5px 5px 5px 5px;
 }*/
+a {
+    color: black;  
+    text-decoration: none;
+}

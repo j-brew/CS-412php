@@ -58,7 +58,7 @@
             <div id="info">
                 
                 <div id="quotes">
-                    <?php randQuote(); ?>
+                    <a href="testimonials.php"<?php randQuote(); ?></a>
                 </div>
                 <div class="h2title">
                     <h2>History of The Junior Jazz Foundation</h2>

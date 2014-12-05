@@ -306,13 +306,15 @@ h3{
 .intro{
     //border: solid 1px blue;
     display: inline-block;
-    margin-left: 25px; 
+    margin: 0 0 0 25px;
+    //padding: 15px;
     width: 570px;
     //height: 380px;
-    
     background: rgba(255,255,255,0.3);
+    vertical-align: bottom;
 }
 .introWide {
+    //border: solid red 1px;
     //display: inline-block;
     margin: 0 25px 0 25px;
     padding: 5px 0 5px 0;
@@ -326,7 +328,7 @@ h3{
     //clear: both;
     display: inine-block;
     background: rgba(216,216,216,.8);
-    opacity: 1.0;
+    //opacity: 1.0;
     //border: solid green 1px;
     padding: 0 10px 0 10px;
     margin: 15px;
@@ -356,7 +358,7 @@ h3{
 #historyBook{
     display: inline-block;
     float: right;
-    margin: 25px 25px 25px 25px;
+    margin: 15px 25px 0px 20px;
     border: solid black 1px;
     width: 240px;
     height: 220px;

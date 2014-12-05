@@ -57,7 +57,7 @@
             <div id="info">
                 
                 <div id="quotes">
-                    <?php randQuote(); ?>
+                    <a href="../about/testimonials.php"<?php randQuote(); ?></a>
                 </div>
 
                 <div class="h2title">

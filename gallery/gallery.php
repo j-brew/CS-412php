@@ -78,14 +78,22 @@
             <div id="info">
 
                 <div id="quotes">
-                    <?php randQuote(); ?>
+                    <a href="../about/testimonials.php"<?php randQuote(); ?></a>
                 </div>
 
-                <h2>Photos</h2>
-                <div align="center">
-                    <ul id="myGallery"  >
-                        <?php imageSlider() ?>
-                    </ul>
+
+                <div class="h2title">
+                    <h2>Photos</h2>
+                </div>
+                
+                <div class="gallery">
+                    <div class="ingallery">
+                        <div align="center">
+                            <ul id="myGallery"  >
+                                <?php imageSlider() ?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div align="center">
                 <noscript id="noScript">
@@ -97,9 +105,16 @@
                     </noscript>
                 </div> 
                 <hr>
-                <h2>Videos</h2>
-                <div class="video">
-                    <iframe width="500" height="298" src="//www.youtube.com/embed/6qnFcFP80ww" frameborder="0" allowfullscreen></iframe>
+                
+                <div class="h2title">
+                    <h2>Videos</h2>
+                </div>
+                <div class="gallery">
+                    <div class="ingallery">
+                        <div class="video">
+                            <iframe width="500" height="298" src="//www.youtube.com/embed/6qnFcFP80ww" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

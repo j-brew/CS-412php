@@ -60,11 +60,12 @@
             <div id="info">
                 
                 <div id="quotes">
-                    <?php randQuote(); ?>
+                    <a href="../about/testimonials.php"><?php randQuote(); ?></a>
                 </div>
-                
-                <h2>Contact Us</h2>
-                
+
+                <div class="h2title">
+                    <h2>Contact Us</h2>
+                </div>
                 <?php
                     if($displayInfo != ""){
                     ?>
@@ -72,33 +73,36 @@
                     <?php
                     }
                 ?>
-                
-                <div id="email">
-                    <form name="formName" onsubmit="validateForm();" method="POST" action="">
-                        <label>Your email address *</label>
-                        <br>
-                        <input class="box" name="email" type="email" id="emailID" required>
-                        <br>
-                        <label>Subject *</label>
-                        <br>
-                        <input class="box" name="subject" type="text" required>
-                        <br>
-                        <label>Message *</label>
-                        <br>
-                        <textarea name="message" required rows="5"></textarea><br>
-                        <input name="Send" type="submit" value="Submit">
-                        <br/>
-                        <small>* required fields</small>
-                    </form>
-                </div>
+                <div id="contact">
+                    <div id="incontact">
+                        <div id="email">
+                            <form name="formName" onsubmit="validateForm();" method="POST" action="">
+                                <label>Your email address *</label>
+                                <br>
+                                <input class="box" name="email" type="email" id="emailID" required>
+                                <br>
+                                <label>Subject *</label>
+                                <br>
+                                <input class="box" name="subject" type="text" required>
+                                <br>
+                                <label>Message *</label>
+                                <br>
+                                <textarea name="message" required rows="5"></textarea><br>
+                                <input name="Send" type="submit" value="Submit">
+                                <br/>
+                                <small>* required fields</small>
+                            </form>
+                        </div>
 
-                <div id="address">
-                    <p>Junior Jazz Foundation<br/>
-                        The Village At Wexford, C-1<br/>
-                        1000 William Hilton Parkway<br/>
-                        Hilton Head, SC 29928<br/>
-                        843.681.9100
-                    </p>
+                        <div id="address">
+                            <p>Junior Jazz Foundation<br/>
+                                The Village At Wexford, C-1<br/>
+                                1000 William Hilton Parkway<br/>
+                                Hilton Head, SC 29928<br/>
+                                843.681.9100
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
