@@ -24,7 +24,7 @@
         <meta charset="UTF-8">
         <title>Admin News</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
-        <script type="text/javascript" src="news.js"></script>
+        <script type="text/javascript" src="jsfiles/news.js"></script>
     </head>
     <body>
         <h4>CURRENT SESSION</h4>

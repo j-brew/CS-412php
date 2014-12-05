@@ -23,7 +23,7 @@ include 'phpfiles/concertsUpload.php';
         <meta charset="UTF-8">
         <title>Admin Concerts</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
-        <script type="text/javascript" src="concerts.js"></script>
+        <script type="text/javascript" src="jsfiles/concerts.js"></script>
     </head>
     <body>
         <div id="content">

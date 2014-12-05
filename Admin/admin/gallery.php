@@ -22,7 +22,7 @@ if (!isset($_SESSION['IPaddress'])) {
         <meta charset="UTF-8">
         <title>Admin Gallery</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
-        <script type="text/javascript" src="gallery.js"></script>
+        <script type="text/javascript" src="jsfiles/gallery.js"></script>
     </head>
     <body>
         <div id="content">

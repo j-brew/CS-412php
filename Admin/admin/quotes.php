@@ -25,7 +25,7 @@
         <title>Admin Quotes</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
         <link rel="stylesheet" type="text/css" href="cssfiles/quotes.css">
-        <script type ="text/javascript" src="quotes.js"></script>
+        <script type ="text/javascript" src="jsfiles/quotes.js"></script>
     </head>
     <body>
         <h4>CURRENT SESSION</h4>
