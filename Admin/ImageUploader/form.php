@@ -7,7 +7,7 @@
         <script type="text/javascript" src="imageUploader.js"></script>
     </head>
     <body>
-        <form action="php_upload.php" method="post" enctype="multipart/form-data">
+        <form name="imageUpload" onsumbit="validate_fileupload();" method="post" enctype="multipart/form-data"> <!action="php_upload.php"> 
             <input type="file" name="file1">
             <input type="submit">
         </form>

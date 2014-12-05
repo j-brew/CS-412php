@@ -1,12 +1,23 @@
 <?php 
     session_start();
+    /*
     if (!isset($_SESSION['IPaddress'])){
         echo "<p> Your session has expired</p>";
+    }
+     * 
+     */
+    if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1800)) 
+    {
+    // last request was more than 30 minutes ago
+    session_unset();     // unset $_SESSION variable for the run-time 
+    session_destroy();   // destroy session data in storage
     }
     else{
         //session_start();
         echo "<p>IPaddress = ".$_SESSION['IPaddress']."</p><p>userAgent = ".$_SESSION['userAgent']."</p><p>sessionID = ".$_SESSION['sessionID']."</p><p>sessionTime = ".$_SESSION['sessionTime']."</p>";
     }
+    $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
+
 ?>
 <!DOCTYPE html>
 

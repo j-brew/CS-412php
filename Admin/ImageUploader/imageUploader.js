@@ -1,7 +1,9 @@
-function validate_fileupload(fileName)
+function validate_fileupload()
 {
-    var fieldValue = getElementById("file1");
-    if(!/(\.bmp|\.gif|\.jpg|\.jpeg)$/i.test(fieldValue)) {
+    var file = document.forms["imageUpload"]["file1"].value;
+    var checkFile = /\.(gif|jpg|jpeg|tiff|png)$/i;
+    if(!checkFile.test(file)||file==null||file=="") 
+    {
         alert("Invalid image file type.");      
         fileName.form.reset();
         fileName.focus();        
@@ -9,4 +11,3 @@ function validate_fileupload(fileName)
     }   
     return true;
 }
-window.onload=validate_fileupload;
