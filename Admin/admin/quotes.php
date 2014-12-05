@@ -26,10 +26,12 @@
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
         <link rel="stylesheet" type="text/css" href="cssfiles/quotes.css">
         <script type ="text/javascript" src="jsfiles/quotes.js"></script>
+        <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
         <h4>CURRENT SESSION</h4>
         <div id="content">
+            <div id="clock"></div>
             
             <div id="title">
                 <h1>Admin Quotes</h1>

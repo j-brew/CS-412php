@@ -20,10 +20,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
+        <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
         
         <div id="content">
+            <div id="clock"></div>
             
             <div id="title">
                 <h1>TJJF Admin</h1>
@@ -39,7 +41,7 @@
                     <li><a href="gallery.php" >ADD</a> / <a href="dropgallery.php" >DELETE</a> gallery pictures</li>
                     <li><a href="concerts.php" >ADD</a> / <a href="dropconcerts.php" >DELETE</a> concerts</li>
                     <li><a href="news.php" >ADD</a> / <a href="dropnews.php">DELETE</a> news articles</li>
-                    <li><a href="quotes.php">ADD</a> / <a href="dropquotes.php">DELETE</a> testimonials</li>
+                    <li><a href="quotes.php">ADD</a> / <a href="dropquotes.php">DELETE</a> testimonials/quotes</li>
                 </ul>
             </div>
             

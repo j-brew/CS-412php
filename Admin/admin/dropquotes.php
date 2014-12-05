@@ -25,10 +25,12 @@
         <title>DROP Quotes</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
         <link rel="stylesheet" type="text/css" href="cssfiles/dropquotes.css">
+        <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
         <h4>CURRENT SESSION</h4>
         <div id="content">
+            <div id="clock"></div>
             
             <div id="title">
                 <h1>DROP quotes</h1>

@@ -24,9 +24,11 @@ include 'phpfiles/concertsUpload.php';
         <title>Admin Concerts</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
         <script type="text/javascript" src="jsfiles/concerts.js"></script>
+        <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
         <div id="content">
+            <div id="clock"></div>
 
             <div id="title">
                 <h1>Admin Concerts</h1>
