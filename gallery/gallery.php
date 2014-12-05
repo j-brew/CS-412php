@@ -112,7 +112,7 @@
                 <div class="gallery">
                     <div class="ingallery">
                         <div class="video">
-                            <iframe width="500" height="298" src="//www.youtube.com/embed/6qnFcFP80ww" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="500" height="298" src="https://www.youtube.com/v/6qnFcFP80ww?fs=1&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
