@@ -23,6 +23,16 @@
             </div>
         </div>
         
+        <div id="topbanner">
+            <div id="bannerpic">
+                <div id="seepast">
+                    <img id="logoleft" src="../pic/titlewithoulineLeftT.png" alt="logo">
+                    <img id="logomiddle" src="../pic/JJFmusicthemeT.png" alt="logo">
+                    <img id="logoright" src="../pic/titlewithoulineRightT.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        
         <div id="menu">
             <div id="menuNav">
                 <ul>

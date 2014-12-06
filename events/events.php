@@ -26,7 +26,11 @@
         
         <div id="topbanner">
             <div id="bannerpic">
-                <img id="logo" src="../pic/logo_139x87.jpg" alt="logo">
+                <div id="seepast">
+                    <img id="logoleft" src="../pic/titlewithoulineLeftT.png" alt="logo">
+                    <img id="logomiddle" src="../pic/JJFmusicthemeT.png" alt="logo">
+                    <img id="logoright" src="../pic/titlewithoulineRightT.png" alt="logo">
+                </div>
             </div>
         </div>
         
