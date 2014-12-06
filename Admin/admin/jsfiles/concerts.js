@@ -1,7 +1,6 @@
 function validateForm()
 {
-   // alert("invalidate form");
-    var fieldValue;
+    //alert("Validate form");
     var error = false;
     var message = "";
         
@@ -10,13 +9,41 @@ function validateForm()
     //var checkArtist=document.getElementById("artist");
     //var checkArtist = /^\S{1,100}$/;
     //if(!checkArtist.test(fieldValue))
-    if(checkArtist==""|| checkArtist==null)
+    if(checkArtist=="" || checkArtist==null)
     {
         //alert("No Perfomer entered.");
         error = true;
         message += "Enter Performer\n";
     }
+     
     
+    //check date
+    
+    var theDate = document.forms["myForm"]["date"].value;
+    var checkDate = /^(\d{4})(\/|-)(\d{1,2})(\/|-)(\d{1,2})$/;   //  ^(\d{1,2})(\/|-)(\d{1,2})(\/|-)(\d{4})$/;
+    if(!checkDate.test(theDate)|| theDate=="")
+    {
+        error=true;
+        message+="Incorrect Date Format.\n";
+    }
+    alert("Date = "+theDate);
+    
+     
+     
+    //check time
+    
+   var time = document.forms["myForm"]["time"].value;
+   var checkTime =/^(1[0-2])|0[1-9]:[0-5][0-9]$/;
+   if(!checkTime.test(time)|| time=="")
+   {
+       error=true;
+       message+="Incorrect Time entered\n";
+   }
+    alert("Time is "+time);
+    
+   
+    
+    /* 
      //check Year
     var year = document.forms["myForm"]["dateY"].value;
    // var year=document.getElementById("dateY");
@@ -49,7 +76,9 @@ function validateForm()
         error = true;
         message+="Enter correct day\n";
     }
-    
+    */
+  
+    /*
     //check Hours
     var hours=document.forms["myForm"]["timeH"].value;
     var checkHours = /^((0[1-9])|(1[0-2]))$/;
@@ -69,6 +98,7 @@ function validateForm()
         error = true;
         message+="Enter minutes\n";
     }
+    */
     
     //check about
     var checkAbout=document.forms["myForm"]["about"].value;
@@ -136,6 +166,7 @@ function validateForm()
     //if any errors then cancel submit
     if(!error) //No errors detected
     {
+        alert("Form will be submitted");
         return true;// Allow form (info.onsubmit) to be submitted
     }
     
