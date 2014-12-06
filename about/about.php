@@ -190,7 +190,7 @@
             <ul id="navigation_list" role="navigation">
                 <li><a href="../index.php">HOME</a></li>
                 <li><a href="about.php">ABOUT US</a></li>
-                <li><a href="../how/help.php">HOW TO HELP</a></li>
+                <li><a href="../how/howtohelp.php">HOW TO HELP</a></li>
                 <li><a href="../events/events.php">EVENTS</a></li>
                 <li><a href="../gallery/gallery.php">GALLERY</a></li>
                 <li><a href="../contact/contactus.php">CONTACT US</a></li>

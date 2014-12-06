@@ -7,7 +7,7 @@ include '../../dbInfo.php';
 
 $error = "";
 
-$connection = mysqli_connect($host, $user, $password, $dbName, $port);
+$connection = mysqli_connect($host, $user, $password, $dbName);
 
 if (mysqli_connect_error()) {
     die("<p><b>Failed to connect to Database</b></p>"); // exits
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "<p style=\"color:red;\"> CONNECTION ERROR " . mysqli_error($connection) . "<br>" . $connection->error . "</p>";
     }
     if (is_uploaded_file($_FILES['file1']['tmp_name'])) {
-        $target_dir = "../../All_image/Jaz/concerts/";
+        $target_dir = "../../All_image/Jaz/shows/";
         $result = move_uploaded_file($_FILES['file1']['tmp_name'], $target_dir . basename($_FILES['file1']['name']));
         //$imageName = basename($_FILES['file1']['name']);
 

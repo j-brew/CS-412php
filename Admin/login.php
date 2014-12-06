@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $auser = filter_input(INPUT_POST, 'user', FILTER_SANITIZE_STRING);
     $apass = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    $connection = mysqli_connect($host, $user, $password, $dbName);
     if (mysqli_connect_error()){
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }

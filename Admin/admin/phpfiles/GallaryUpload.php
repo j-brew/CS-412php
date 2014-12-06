@@ -4,7 +4,7 @@ include '../../dbInfo.php';
 
 $error = "";
 
-$connection = mysqli_connect($host, $user, $password, $dbName, $port);
+$connection = mysqli_connect($host, $user, $password, $dbName);
 
 if (mysqli_connect_error()) {
     die("<p><b>Failed to connect to Database</b></p>"); // exits

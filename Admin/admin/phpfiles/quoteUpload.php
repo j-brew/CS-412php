@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error .= "<p style=\"color:red;\">Quote and Author are required</p>";
     }
     else{
-        $connection = mysqli_connect($host, $user, $password, $dbName, $port);    
+        $connection = mysqli_connect($host, $user, $password, $dbName);    
         if (mysqli_connect_error()){
             die("<p><b>Failed to connect to Database</b></p>"); // exits
         }

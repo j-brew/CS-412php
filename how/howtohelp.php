@@ -1,5 +1,18 @@
-<?php include '../db.php'; ?>
+<?php 
 
+    error_reporting(E_ALL);
+    ini_set('display_errors', 'On');
+
+    include '../db.php';
+    
+    require_once '../MobileDetect/Mobile_Detect.php'; 
+    $detect = new Mobile_Detect;
+    
+    $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+    $scriptVersion = $detect->getScriptVersion();
+    //echo "<p style=\"color:white\" >device Type = ".$deviceType."</p>";
+    if ($deviceType == "computer" || $deviceType == "tablet"){
+?>
 <!DOCTYPE html>
 
 <html>
@@ -198,3 +211,75 @@
         </div>
     </body>
 </html>
+    <?php }else{ ?>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>The Junior Jazz Foundation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mobile.css">
+        <script src="../mobile.js" ></script>
+    </head>
+    <body>
+        <div id="title">
+            <img id="logo" src="../pic/titleLeft.png" alt="logo">
+        </div>
+        <nav id="navigation">
+            <a class="menu_button" href="#footer_nav" onclick="toggleNav(); return false;">&#9776;  MENU</a>
+            <ul id="navigation_list" role="navigation">
+                <li><a href="../index.php">HOME</a></li>
+                <li><a href="../about/about.php">ABOUT US</a></li>
+                <li><a href="help.php">HOW TO HELP</a></li>
+                <li><a href="../events/events.php">EVENTS</a></li>
+                <li><a href="../gallery/gallery.php">GALLERY</a></li>
+                <li><a href="../contact/contactus.php">CONTACT US</a></li>
+            </ul>
+        </nav>
+        
+        <div id="dlink">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=G8MHZAQPP8JLG" target="_blank">DONATE</a>
+        </div>
+        
+        <div class="content">
+ 
+        </div>
+        
+        <div class="h2title">
+            <h2>Supporting the JJF</h2>
+        </div>
+        
+        <div class="content">
+            <p>Depending on your situation, you may want to make a gift now, 
+                provide a gift through your estate plan, or both.
+            </p>
+            <p>Current gifts to the Junior Jazz Foundation offer important 
+                tax benefits such as the maximum allowable charitable income 
+                tax deduction in the year that the gift is made and possible 
+                elimination of capital gains taxes on gifts of appreciated 
+                property.
+            </p>
+            <p>As a contributor to our dual mission of performance and education, 
+                we have developed several areas where individuals and organizations 
+                can provide assistance.
+            </p>
+        </div>
+        
+        <div class="content">
+            <h3>Tax-deductible contributions support:</h3>
+            <ul>
+                <li>Educational outreach to area school music programs</li>
+                <li>Community outreach programs in partnership with other 
+                    cultural institutions </li>
+                <li>The best performances the world has to offer in jazz & 
+                    blues</li>
+                <li>Showcases for emerging and regional artists</li>
+                <div id="contributor"></div>
+                <li>Hilton Head Island as a tourist destination for music fans</li>
+            </ul>
+        </div>
+           
+    </body>
+</html>
+    <?php } ?>
