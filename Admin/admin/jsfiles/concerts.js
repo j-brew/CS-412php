@@ -26,7 +26,7 @@ function validateForm()
         error=true;
         message+="Incorrect Date Format.\n";
     }
-    alert("Date = "+theDate);
+    //alert("Date = "+theDate);
     
      
      
@@ -39,7 +39,7 @@ function validateForm()
        error=true;
        message+="Incorrect Time entered\n";
    }
-    alert("Time is "+time);
+    //alert("Time is "+time);
     
    
     
