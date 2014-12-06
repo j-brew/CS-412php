@@ -32,7 +32,7 @@
         <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
-        <h4>CURRENT SESSION</h4>
+
         <div id="content">
             <div id="clock"></div>
             

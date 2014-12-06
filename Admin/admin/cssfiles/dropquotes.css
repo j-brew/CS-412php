@@ -7,9 +7,10 @@
 }
 
 .dropquote {
-    border: solid red 1px;
+    border: solid black 1px;
     width: 550px;
     height: 150px;
+    padding: 0px;
     margin: 0 auto 10px auto;
 }
 .chkbox {
@@ -23,7 +24,7 @@
     display: inline-block;
     width: 500px;
     height: 140px;
+    margin: 3px;
     overflow: scroll;
-    border: solid green 1px;
-    
+    //border: solid green 1px;
 }
