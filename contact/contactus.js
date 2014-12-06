@@ -14,7 +14,7 @@ function validateForm()
     }
     
     //check subject
-    var subject=document.document.forms["formName"]["subject"].value;
+    var subject=document.forms["formName"]["subject"].value;
     //var checkSubject = /^\w{1,100}$/;
     if(subject==""||subject==null)
     {
@@ -23,7 +23,7 @@ function validateForm()
     }
     
     //check message
-    var msg=document.document.forms["formName"]["message"].value;
+    var msg=document.forms["formName"]["message"].value;
     if(msg==""||msg==null)
     {
         message+="No Message entered.\n";
@@ -33,6 +33,7 @@ function validateForm()
     //if any errors then cancel submit
     if(!error)
     {
+        alert("Form OK to be sent.");
         return true;
     }
     
