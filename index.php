@@ -26,8 +26,8 @@
         
         <div id="topbanner">
             <div id="bannerpic">
-                <img id="logo1" src="pic/logo_139x87.jpg" alt="logo">
-                <img id="logo2" src="pic/logo_139x87.jpg" alt="logo">
+                <img id="logo1" src="pic/titlewithlineLeftT.png" alt="logo">
+                <img id="logo2" src="pic/titlewithlineRightT.png" alt="logo">
             </div>
         </div>
         
