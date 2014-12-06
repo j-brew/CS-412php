@@ -1,5 +1,5 @@
 <?php 
-    include 'phpfiles/quoteUpload.php';
+    include 'phpfiles/newsUpload.php';
     
     session_start();
     if (!isset($_SESSION['IPaddress'])){
@@ -20,7 +20,7 @@
         $_SESSION['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
         $_SESSION['sessionID'] = session_id();
         $_SESSION['sessionTime'] = time();
-        session_write_close();?>
+        ?>
 <!DOCTYPE html>
 
 <html>
@@ -32,7 +32,6 @@
         <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
-        <h4>CURRENT SESSION</h4>
         <div id="content">
             <div id="clock"></div>
             

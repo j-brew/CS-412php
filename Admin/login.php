@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
         $_SESSION['sessionID'] = session_id();
         $_SESSION['sessionTime'] = time();
-        session_write_close();
+        //session_write_close();
 
         header('Location: admin/admin.php');
         exit;

@@ -1,5 +1,5 @@
 <?php 
-    include 'phpfiles/quoteUpload.php';
+    include 'phpfiles/galleryDelete.php';
     
     session_start();
     if (!isset($_SESSION['IPaddress'])){
@@ -20,7 +20,7 @@
         $_SESSION['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
         $_SESSION['sessionID'] = session_id();
         $_SESSION['sessionTime'] = time();
-        session_write_close();?>
+        ?>
 <!DOCTYPE html>
 
 <html>
