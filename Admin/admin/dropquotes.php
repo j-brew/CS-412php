@@ -1,5 +1,5 @@
 <?php 
-    include 'phpfiles/quoteDelete.php';
+    include 'phpfiles/quoteUpload.php';
     
     session_start();
     if (!isset($_SESSION['IPaddress'])){
@@ -7,16 +7,20 @@
         echo '<p>if you know the secret knock that it\'s ok :)</p>';
         echo '<p>enter your secret knock <a href="../index.php">here ... </a></p>';
     }
-    else{
-        echo "<p>previous session time = ".$_SESSION['sessionTime']."</p>";
-        echo "current time = ".time();
-        //echo "calculation = ".($_SESSION['sessionTime']-time());
-        if ((time()-$_SESSION['sessionTime']) > 30){
-          echo "<p>session expired</p>";  
-        }
+    else if ((time()-$_SESSION['sessionTime']) > 60){
+        session_unset();
+        session_destroy();
+        $_SESSION = array();
+        echo "<h1>session expired :(</h1>";
+        echo '<p>enter your secret knock <a href="../index.php">here ... </a></p>';
     }
-?>
-<?php #if((time()-$_SESSION['sessionTime']) < 30){ ?>
+    else if((time()-$_SESSION['sessionTime']) <= 60){
+        session_regenerate_id();
+        $_SESSION['IPaddress'] = $_SERVER['REMOTE_ADDR'];
+        $_SESSION['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
+        $_SESSION['sessionID'] = session_id();
+        $_SESSION['sessionTime'] = time();
+        session_write_close();?>
 <!DOCTYPE html>
 
 <html>
@@ -73,4 +77,4 @@
     </body>
 </html>
 
-<?php # } ?>
+<?php  } ?>

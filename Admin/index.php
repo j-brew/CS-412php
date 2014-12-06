@@ -1,19 +1,4 @@
-<?php include 'login.php';
-
-    //session_start();
-    if (!isset($_SESSION['IPaddress'])){
-        echo 'session IP is NOT set';    
-    }
-    else{
-        echo "<p>previous session time = ".$_SESSION['sessionTime']."</p>";
-        echo "current time = ".time();
-        //echo "calculation = ".($_SESSION['sessionTime']-time());
-        if ((time()-$_SESSION['sessionTime']) > 30){
-          echo "<p>session expired</p>";  
-        
-        }
-    }
-?>
+<?php include 'login.php'; ?>
 
 <!DOCTYPE html>
 
