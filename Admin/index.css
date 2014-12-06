@@ -21,7 +21,7 @@ h1 {
 }
 
 #info {
-    width: 230px;
+    width: 250px;
     margin: 20px auto 0 auto;
     border: solid black 1px;
     padding: 15px;
@@ -39,6 +39,12 @@ h1 {
     width: 65px;
     margin: 0 auto 0 auto;
     //border: solid red 1px;
+}
+#user {
+    width: 117px;
+}
+#password {
+    width: 117px;
 }
 #center input {
     width: 65px;

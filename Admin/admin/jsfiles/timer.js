@@ -3,7 +3,7 @@ var limit = 60000; // one minute
 window.onload = function (){
     var outin = new Date().getTime()+limit;
     var wee;
-    wee = setInterval(function(){d(outin);}, 250);    
+    wee = setInterval(function(){d(outin);}, 250); 
 };
 
 function d(outin){

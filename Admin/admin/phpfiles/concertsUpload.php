@@ -15,7 +15,7 @@ if (mysqli_connect_error()) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-       $imageName = basename($_FILES['file1']['name']);
+    $imageName = basename($_FILES['file1']['name']);
     $musician = $_POST['artist'];
     $date = $_POST['date'];
     $time = $_POST['time'];
@@ -49,5 +49,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $connection->close();
 }
-?>
-        

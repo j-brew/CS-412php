@@ -55,7 +55,7 @@ function news(){
                         echo "<p>".str_replace("\r\n", "</p><p>", $row['about'])."</p>";
                     echo '</div>';
                     echo '<div class="newsLink">';
-                        echo '<p>http://'.$row['link'].'</p>';
+                        echo '<p>'.$row['link'].'</p>';
                     echo '</div>';
                 echo '</div>';
             echo '</div>';

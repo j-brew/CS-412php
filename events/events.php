@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link rel="stylesheet" type="text/css" href="events.css">
-        <script src="events.js" ></script>
-        <script src="../index.js" ></script>
+        <script type="text/javascript" src="events.js"></script>
+        <!--<script type="text/javascript" src="../index.js"></script>-->
     </head>
     <body>
         <div id="donate">
@@ -26,7 +26,11 @@
         
         <div id="topbanner">
             <div id="bannerpic">
-                <img id="logo" src="../pic/logo_139x87.jpg" alt="logo">
+                <div id="seepast">
+                    <img id="logoleft" src="../pic/titlewithoulineLeftT.png" alt="logo">
+                    <img id="logomiddle" src="../pic/JJFmusicthemeT.png" alt="logo">
+                    <img id="logoright" src="../pic/titlewithoulineRightT.png" alt="logo">
+                </div>
             </div>
         </div>
         
@@ -34,14 +38,14 @@
             <div id="menuNav">
                 <ul>
                     <li><a href="../index.php">HOME</a></li>
-                    <li><a href="../about/about.php">ABOUT US</a>
-                        <ul>
+                    <li id="about"><a href="../about/about.php">ABOUT US</a>
+                        <ul id="abouts">
                             <li><a href="../about/testimonials.php">Testimonials</a></li>
                             <li><a href="../about/news.php">In The News</a></li>
                         </ul>
                     </li>
-                    <li><a href="../how/howtohelp.php">HOW TO HELP</a>
-                        <ul class="subMenu">
+                    <li id="how"><a href="../how/howtohelp.php">HOW TO HELP</a>
+                        <ul id="hows">
                             <li><a href="../how/howtohelp.php#support" target="_self">Supporting the JJF</a></li>
                             <li><a href="../how/howtohelp.php#contributor" target="_self">Contributer Centers</a></li>
                             <li><a href="../how/howtohelp.php#donation" target="_self">Donation Benefits</a></li>
@@ -84,6 +88,19 @@
                                 <h4>Tickets are $45</h4>
                                 <h4>Available at <a href="http://www.uscbcenterforthearts.com" target="_blank">www.uscbcenterforthearts.com</a></h4>
                                 <h4>Or call (843)521-4145</h4>
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="showposter">
+                                <div class="picshow">
+                                    <img class="poster" src="../All_image/Jaz/shows/poster2Oct30.png" data-larger="../All_image/Jaz/shows/poster2Oct30.png" alt="pic">
+                                </div>
+                                <div class="picshowinfo">
+                                    <h4>September 25, 2014 8:00pm</h4>
+                                    <h4>Tickets are $45</h4>
+                                    <h4>Available at <a href="http://www.uscbcenterforthearts.com" target="_blank">www.uscbcenterforthearts.com</a></h4>
+                                    <h4>Or call (843)521-4145</h4>
+                                </div>
                             </div>
                         </div>-->
                     </div>
