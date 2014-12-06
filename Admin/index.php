@@ -9,8 +9,8 @@
         echo "current time = ".time();
         //echo "calculation = ".($_SESSION['sessionTime']-time());
         if ((time()-$_SESSION['sessionTime']) > 30){
-          echo "<p>session expired</p>";  
-        
+            echo "<p>session expired</p>";  
+            
         }
     }
 ?>
