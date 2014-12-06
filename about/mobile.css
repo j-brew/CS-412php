@@ -1,0 +1,98 @@
+html {
+    width: 480px;
+    background-color: black;
+}
+body {
+    width: 480px;
+    border: solid black 1px;
+    margin: 0 auto 0 auto;
+}
+
+#title {
+    width: 478px;
+    height: 200px;
+    border: solid red 1px;
+    margin: 0 auto 0 auto;
+}
+#logo {
+    width: 478px;
+    height: 200px;
+}
+
+#navigation {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    //border: solid red 1px;
+}
+#navigation ul {
+    display: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    //border: solid red 1px;
+}
+#navigation ul.expanded {
+    display: block;
+}
+#navigation li a {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #666;
+    font-size: 1.2em;
+    color: #ccc;
+    text-decoration: none;
+}
+.menu_button {
+    display: block;
+    text-align: right;
+    color: #ffc;
+    text-decoration: none;
+}
+.menu_button:hover {
+    color: #58cbdb;
+    text-decoration: none;
+}
+
+#dlink {
+    width: 100px;
+    background: white;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+#content{
+    //width: 478px;
+    background-color:grey;
+    padding: 10px;
+}
+
+.content {
+    //width: 480px;
+    background-color:grey;
+    padding: 10px;
+    text-align: justify;
+}
+
+#photo {
+    width: 250px;
+    height: 200px;
+    border: solid white 1px;
+    margin: 0 auto 0 auto;
+}
+#trumpet {
+    width: 250px;
+    height: 200px;
+}
+#amazon{
+    width: 150px;
+    height: 150px;
+    border: white solid 1px;
+    margin: 0 auto 0 auto;
+}
+#amazon img {
+    width: 150px;
+    height: 150px; 
+}
