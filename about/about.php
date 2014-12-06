@@ -152,7 +152,7 @@
                     </div>
 
                     <div id="goal">
-                    <h3>Goals</h3>
+                        <h3>Goals</h3>
                         <ul>
                             <li>To continue to raise funds for youth and school programs</li>
                             <li>To educate listeners</li>
@@ -241,6 +241,10 @@
             </a>
         </div>
         
+        <div class="h2title">
+            <h2>JJF Accomplishments </h2>
+        </div>
+        
         <div class="content">
             <h3>Past and Present Programs</h3>
             <ul>
@@ -266,9 +270,15 @@
                     LowCountry</li>
             </ul>
         </div>
-        
+
         <div class="content">
-            
+            <h3>Goals</h3>
+            <ul>
+                <li>To continue to raise funds for youth and school programs</li>
+                <li>To educate listeners</li>
+                <li>o broaden the audience for Jazz</li>
+                <li>To present and showcase quality Jazz on Hilton Head Island</li>
+            </ul> 
         </div>
     </body>
 </html>

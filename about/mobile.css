@@ -75,7 +75,12 @@ body {
     padding: 10px;
     text-align: justify;
 }
-
+.h2title{
+    background-color:grey;
+    border: solid white 1px;
+    text-align: center;
+    padding: 0;
+}
 #photo {
     width: 250px;
     height: 200px;
