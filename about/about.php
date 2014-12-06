@@ -37,14 +37,14 @@
             <div id="menuNav">
                 <ul>
                     <li><a href="../index.php">HOME</a></li>
-                    <li><a href="about.php">ABOUT US</a>
-                        <ul>
+                    <li id="about"><a href="about.php">ABOUT US</a>
+                        <ul id="abouts">
                             <li><a href="testimonials.php">Testimonials</a></li>
                             <li><a href="news.php">In The News</a></li>
                         </ul>
                     </li>
-                    <li><a href="../how/howtohelp.php">HOW TO HELP</a>
-                        <ul class="subMenu">
+                    <li id="how"><a href="../how/howtohelp.php">HOW TO HELP</a>
+                        <ul id="hows">
                             <li><a href="../how/howtohelp.php#support" target="_self">Supporting the JJF</a></li>
                             <li><a href="../how/howtohelp.php#contributor" target="_self">Contributer Centers</a></li>
                             <li><a href="../how/howtohelp.php#donation" target="_self">Donation Benefits</a></li>

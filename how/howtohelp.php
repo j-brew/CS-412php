@@ -42,14 +42,14 @@
             <div id="menuNav">
                 <ul id="startMenu">
                     <li><a href="../index.php">HOME</a></li>
-                    <li><a href="../about/about.php">ABOUT US</a>
-                        <ul>
+                    <li id="about"><a href="../about/about.php">ABOUT US</a>
+                        <ul id="abouts">
                             <li><a href="../about/testimonials.php">Testimonials</a></li>
                             <li><a href="../about/news.php">In The News</a></li>
                         </ul>
                     </li>
-                    <li><a href="howtohelp.php">HOW TO HELP</a>
-                        <ul class="subMenu">
+                    <li id="how"><a href="howtohelp.php">HOW TO HELP</a>
+                        <ul id="hows">
                             <li><a href="#support" target="_self">Supporting the JJF</a></li>
                             <li><a href="#contributor" target="_self">Contributer Centers</a></li>
                             <li><a href="#donation" target="_self">Donation Benefits</a></li>

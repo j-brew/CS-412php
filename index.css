@@ -57,14 +57,15 @@ a {
     display: block;
     position: relative;
     z-index: 2;
-    background-color: red;
+    background-color: rgb(144,144,144);
     width: 100%;
     height: 40px;
     font-weight: bold;
     border: 1px black solid;
 }
 #menuNav{
-    background: coral;
+    //background: coral;
+    background-color: rgb(208,208,208);
     width: 750px;
     height: 30px;
     margin: 5px auto 0px auto;
@@ -79,16 +80,11 @@ a {
     display: block;
 }
 #menuNav ul {
-	//background: #efefef; 
-	//background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
-	//background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
-	//background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
-	//box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding: 0px 0px;
-        margin: 0;
-	list-style: none;
-	position: relative;
-	display: inline-table;
+    padding: 0px 0px;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    display: inline-table;
 }
 #menuNav ul:after {
     content: "";
@@ -102,6 +98,7 @@ a {
     height: 28px;
     margin: 0 10px;
     background: white;
+    //background: rgb(144,144,144);
 }
 /*#menuNav ul li:hover {       // not working
     background-color: green;
@@ -115,7 +112,7 @@ a {
 #menuNav ul li a {
     display: block; 
     padding: 5px 10px;
-    color: purple; 
+    color: black; 
     text-decoration: none;
 }
 #menuNav ul ul {
@@ -125,13 +122,29 @@ a {
     position: absolute; 
     top: 100%;
 }
-#menuNav ul ul li {
+/*#menuNav ul ul li {
     float: none;
     margin: 0;
     //border-top: 1px solid white;
     //border-bottom: 1px solid white;
     position: relative;
-    margin-left: -3px;  /* center */
+    margin-left: -3px;   center 
+}*/
+#about #abouts li {
+    float: none;
+    margin: 0;
+    //border-top: 1px solid white;
+    //border-bottom: 1px solid white;
+    position: relative;
+    margin-left: -3px;  /* center */ 
+}
+#how #hows li{
+    float: none;
+    margin: 0;
+    //border-top: 1px solid white;
+    //border-bottom: 1px solid white;
+    position: relative;
+    margin-left: -12px;  /* center */
 }
 #menuNav ul ul li a {    
     padding: 5px 10px;
@@ -398,18 +411,22 @@ h3{
 
     /* *****  FOOTER ***** */
 #footer{
-    background: red;
+    //background: red;
+    background-color: rgb(144,144,144);
     width: 100%;
-    height: 60px;
+    max-height: 50px;
+    min-height: 100%;
+    border-top: solid black 3px;
 }
 #footp{
-    background: green;
+    //background: green;
+    background-color: grey;
     width: 690px;
     height: 20px;
     margin: 0 auto 0 auto;
     text-align: center;
     font-weight: bold;
-    padding: 5px;
+    
 }
 #footc{
     background: gray;
@@ -418,5 +435,5 @@ h3{
     margin: 0 auto 0 auto;
     text-align: center;
     font-weight: bold;
-    padding: 5px;
+    //padding: 5px;
 }
