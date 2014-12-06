@@ -25,7 +25,6 @@ include 'phpfiles/galleryDelete.php';
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
         <link rel="stylesheet" type="text/css" href="cssfiles/expand.css">
         <script type="text/javascript" src="jsfiles/expand.js"></script>
-        <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
         <div id="content">

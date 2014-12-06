@@ -130,7 +130,7 @@ function news(){
                     echo "<p>".str_replace("\r\n", "</p><p>", $row['about'])."</p>";
                 echo '</div>';
                 echo '<div class="newsLink">';
-                    echo '<a href="http://'.$row['link'].'" target="_blank">READ MORE ...</a>';
+                    echo '<a href="'.$row['link'].'" target="_blank">READ MORE ...</a>';
                 echo '</div>';
             echo '</div>';
         }
@@ -146,27 +146,46 @@ function futureShows(){
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
     
-    $query = "SELECT * FROM shows WHERE date >= CURDATE()";
+    $query = "SELECT * FROM shows WHERE date >= CURDATE() ORDER BY date ASC";
     $result = mysqli_query($connection, $query);
     
     if (mysqli_num_rows($result) > 0){
         
         while($row = mysqli_fetch_assoc($result)){
-            echo '<div class="show">';
-                echo '<div class="pich">';
-                    echo "<img src=\"../All_image/Jaz/shows/".$row['pic']."\" alt=\"book sale\">";
+            if ($row['musician']==NULL || $row['about']==NULL || $row['at']==NULL){
+                echo '<div class="show">';
+                    echo '<div class="showposter">';
+                        echo '<div class="picshow">';
+                            echo "<img class=\"poster\" src=\"../All_image/Jaz/shows/".$row['pic']."\" data-larger=\"../All_image/Jaz/shows/".$row['pic']."\" alt=\"pic\">";
+                        echo '</div>';
+                        echo '<div class="picshowinfo">';
+                                $Date = date('m/d/Y', strtotime($row['date']));
+                                $Time =date("h:i A", strtotime($row['time']));
+                                echo "<h4>".$Date." ".$Time."</h4>";
+                                echo "<h4>Tickets are $".$row['price']."</h4>";
+                                echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                                echo "<h4>Or call ".$row['phone']."</h4>";
+                        echo '</div>';
+                    echo '</div>';
                 echo '</div>';
-                echo '<div class="about">';
-                    echo "<h3>".$row['musician']."</h3>";
-                    $Date = date('m/d/Y', strtotime($row['date']));
-                    $Time =date("h:i A", strtotime($row['time']));
-                    echo "<h4>".$Date." ".$Time."</h4>";
-                    echo "<p>".$row['about']."</p>";
-                    echo "<h4>Tickets are $".$row['price']."</h4>";
-                    echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
-                    echo "<h4>Or call ".$row['phone']."</h4>";
+            }
+            else {
+                echo '<div class="show">';
+                    echo '<div class="pich">';
+                        echo "<img src=\"../All_image/Jaz/shows/".$row['pic']."\" alt=\"book sale\">";
+                    echo '</div>';
+                    echo '<div class="about">';
+                        echo "<h3>".$row['musician']."</h3>";
+                        $Date = date('m/d/Y', strtotime($row['date']));
+                        $Time =date("h:i A", strtotime($row['time']));
+                        echo "<h4>".$Date." ".$Time."</h4>";
+                        echo "<p>".$row['about']."</p>";
+                        echo "<h4>Tickets are $".$row['price']."</h4>";
+                        echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                        echo "<h4>Or call ".$row['phone']."</h4>";
+                    echo '</div>';
                 echo '</div>';
-            echo '</div>';
+            }
         }
     }
     else{
@@ -182,27 +201,46 @@ function pastShows(){
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
     
-    $query = "SELECT * FROM shows WHERE date < CURDATE()";
+    $query = "SELECT * FROM shows WHERE date < CURDATE() ORDER BY date DESC";
     $result = mysqli_query($connection, $query);
     
     if (mysqli_num_rows($result) > 0){
         
         while($row = mysqli_fetch_assoc($result)){
-            echo '<div class="show">';
-                echo '<div class="pich">';
-                    echo "<img src=\"../All_image/Jaz/shows/".$row['pic']."\" alt=\"book sale\">";
+            if ($row['musician']==NULL || $row['about']==NULL || $row['at']==NULL){
+                echo '<div class="show">';
+                    echo '<div class="showposter">';
+                        echo '<div class="picshow">';
+                            echo "<img class=\"poster\" src=\"../All_image/Jaz/shows/".$row['pic']."\" data-larger=\"../All_image/Jaz/shows/".$row['pic']."\" alt=\"pic\">";
+                        echo '</div>';
+                        echo '<div class="picshowinfo">';
+                                $Date = date('m/d/Y', strtotime($row['date']));
+                                $Time =date("h:i A", strtotime($row['time']));
+                                echo "<h4>".$Date." ".$Time."</h4>";
+                                echo "<h4>Tickets are $".$row['price']."</h4>";
+                                echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                                echo "<h4>Or call ".$row['phone']."</h4>";
+                        echo '</div>';
+                    echo '</div>';
                 echo '</div>';
-                echo '<div class="about">';
-                    echo "<h3>".$row['musician']."</h3>";
-                    $Date = date('m/d/Y', strtotime($row['date']));
-                    $Time =date("h:i A", strtotime($row['time']));
-                    echo "<h4>".$Date." ".$Time."</h4>";
-                    echo "<p>".$row['about']."</p>";
-                    echo "<h4>Tickets are $".$row['price']."</h4>";
-                    echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
-                    echo "<h4>Or call ".$row['phone']."</h4>";
+            }
+            else {
+                echo '<div class="show">';
+                    echo '<div class="pich">';
+                        echo "<img src=\"../All_image/Jaz/shows/".$row['pic']."\" alt=\"book sale\">";
+                    echo '</div>';
+                    echo '<div class="about">';
+                        echo "<h3>".$row['musician']."</h3>";
+                        $Date = date('m/d/Y', strtotime($row['date']));
+                        $Time =date("h:i A", strtotime($row['time']));
+                        echo "<h4>".$Date." ".$Time."</h4>";
+                        echo "<p>".$row['about']."</p>";
+                        echo "<h4>Tickets are $".$row['price']."</h4>";
+                        echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                        echo "<h4>Or call ".$row['phone']."</h4>";
+                    echo '</div>';
                 echo '</div>';
-            echo '</div>';
+            }
         }
     }
     else{
