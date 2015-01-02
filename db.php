@@ -4,7 +4,7 @@ function allQuotes(){
     # gets all the quotes from the database
     include 'dbInfo.php';
     
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);    
+    $connection = mysqli_connect($host, $user, $password, $dbName);    
     if (mysqli_connect_error()){
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
@@ -28,7 +28,7 @@ function randQuote(){
     # gets random quote from the database
     include 'dbInfo.php';
     
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);    
+    $connection = mysqli_connect($host, $user, $password, $dbName);    
     if (mysqli_connect_error()){
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
@@ -54,7 +54,7 @@ function randQuote(){
 
 function imageSlider() {
     include 'dbInfo.php';
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    $connection = mysqli_connect($host, $user, $password, $dbName);
     if (mysqli_connect_error()) {
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
@@ -72,7 +72,7 @@ function imageSlider() {
 
 function imageSlider_NoScript() {
     include 'dbInfo.php';
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    $connection = mysqli_connect($host, $user, $password, $dbName);
     if (mysqli_connect_error()) {
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
@@ -114,7 +114,7 @@ function imageSlider_NoScript() {
 function news(){
     include 'dbInfo.php';
     
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    $connection = mysqli_connect($host, $user, $password, $dbName);
     if (mysqli_connect_error()) {
     die("<p><b>Failed to connect to Database</b></p>");// exits
     }
@@ -141,7 +141,7 @@ function news(){
 function futureShows(){
     include 'dbInfo.php';
     
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    $connection = mysqli_connect($host, $user, $password, $dbName);
     if (mysqli_connect_error()) {
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
@@ -163,7 +163,7 @@ function futureShows(){
                                 $Time =date("h:i A", strtotime($row['time']));
                                 echo "<h4>".$Date." ".$Time."</h4>";
                                 echo "<h4>Tickets are $".$row['price']."</h4>";
-                                echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                                echo "<h4>Available at <a href=\"http://".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
                                 echo "<h4>Or call ".$row['phone']."</h4>";
                         echo '</div>';
                     echo '</div>';
@@ -181,7 +181,7 @@ function futureShows(){
                         echo "<h4>".$Date." ".$Time."</h4>";
                         echo "<p>".$row['about']."</p>";
                         echo "<h4>Tickets are $".$row['price']."</h4>";
-                        echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                        echo "<h4>Available at <a href=\"http://".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
                         echo "<h4>Or call ".$row['phone']."</h4>";
                     echo '</div>';
                 echo '</div>';
@@ -196,7 +196,7 @@ function futureShows(){
 function pastShows(){
     include 'dbInfo.php';
     
-    $connection = mysqli_connect($host, $user, $password, $dbName, $port);
+    $connection = mysqli_connect($host, $user, $password, $dbName);
     if (mysqli_connect_error()) {
         die("<p><b>Failed to connect to Database</b></p>"); // exits
     }
@@ -218,7 +218,7 @@ function pastShows(){
                                 $Time =date("h:i A", strtotime($row['time']));
                                 echo "<h4>".$Date." ".$Time."</h4>";
                                 echo "<h4>Tickets are $".$row['price']."</h4>";
-                                echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                                echo "<h4>Available at <a href=\"http://".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
                                 echo "<h4>Or call ".$row['phone']."</h4>";
                         echo '</div>';
                     echo '</div>';
@@ -236,7 +236,7 @@ function pastShows(){
                         echo "<h4>".$Date." ".$Time."</h4>";
                         echo "<p>".$row['about']."</p>";
                         echo "<h4>Tickets are $".$row['price']."</h4>";
-                        echo "<h4>Available at <a href=\"http://\"".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
+                        echo "<h4>Available at <a href=\"http://".$row['link']."\" target=\"_blank\">".$row['link']."</a></h4>";
                         echo "<h4>Or call ".$row['phone']."</h4>";
                     echo '</div>';
                 echo '</div>';

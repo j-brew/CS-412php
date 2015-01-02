@@ -34,14 +34,14 @@ function validateForm()
     //if any errors then cancel submit
     if(!error) //No errors detected
     {
-        return true;// Allow form (info.onsubmit) to be submitted
+        return (true);// Allow form (info.onsubmit) to be submitted
     }
     
     else //Errors detected
     {
         alert(message);
-        return false; //Form(info.onsubmit) will not be submitted
+        return (false); //Form(info.onsubmit) will not be submitted
     }
        
    
-}
+};

@@ -48,7 +48,7 @@
             </div>
 
             <div id="upfile">
-                <form name="imageUpload" onsubmit="validate_fileupload();"action="" method="post" enctype="multipart/form-data">
+                <form name="imageUpload" onsubmit="return validate_fileupload();"action="" method="post" enctype="multipart/form-data">
                     <input type="file" name="file1">
                     <hr>
                     <div id="save">

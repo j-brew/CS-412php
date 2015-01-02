@@ -48,7 +48,7 @@
             </div>
 
             <div id="info">
-                <form name="myForm" method="POST" onsubmit = "validateForm();" action="" enctype="multipart/form-data">
+                <form name="myForm" method="POST" onsubmit = "return validateForm();" action="" enctype="multipart/form-data">
                     <label>Performer : </label><br>
                     <input class="txtbox" type="text" name="artist" id="artist" placeholder="performer ...">
                     <hr>

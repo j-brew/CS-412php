@@ -50,7 +50,7 @@
             </div>
             
             <div id="quotes">
-                <form name="quoteForm" onsubmit="validateForm();" method="POST" action="">
+                <form name="quoteForm" onsubmit="return validateForm();" method="POST" action="">
                     <label>Quote : </label><br>
                     <textarea name="quote" rows="5" cols="40" placeholder="quote ..."></textarea>
                     <hr>

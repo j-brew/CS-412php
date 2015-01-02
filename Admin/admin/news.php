@@ -48,7 +48,7 @@
             </div>
             
             <div id="news">
-                <form name="newsForm" onsubmit="validateForm();" method="POST" action="">
+                <form name="newsForm" onsubmit="return validateForm()" method="POST" action="">
                     <label >Title : </label><br>
                     <input class="txtbox" type="text" name="title" placeholder="title ..." required>
                     <hr>

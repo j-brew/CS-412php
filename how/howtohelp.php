@@ -232,9 +232,6 @@
                 <li><a href="../index.php">HOME</a></li>
                 <li><a href="../about/about.php">ABOUT US</a></li>
                 <li><a href="help.php">HOW TO HELP</a></li>
-                <li><a href="../events/events.php">EVENTS</a></li>
-                <li><a href="../gallery/gallery.php">GALLERY</a></li>
-                <li><a href="../contact/contactus.php">CONTACT US</a></li>
             </ul>
         </nav>
         
@@ -278,6 +275,85 @@
                 <div id="contributor"></div>
                 <li>Hilton Head Island as a tourist destination for music fans</li>
             </ul>
+        </div>
+        
+        <div class="h2title">
+            <h2>Contributor Centers</h2>
+        </div>
+        
+        <div class="content">
+            <ol>
+                <li>JAZZ EDUCATION - This area can be tailored to individual 
+                    desires with both in kind (instruments) and monetary 
+                    ($25 - $5000) readily accepted and earmarked by JJF for 
+                    specific programs including: 
+                    <ul>
+                        <li>WORKSHOPS</li>
+                        <li>MASTER CLASSES</li>
+                        <li>INSTRUMENT PURCHASES</li>
+                        <li>UNDERPRIVILEGED</li>
+                        <li>OUTREACH CLINICS</li>
+                        <li>SUMMER CAMP</li>
+                        <li>NOTE *Contributions to this category will be specifically 
+                            earmarked for these uses.</li>
+                    </ul>
+                </li>
+                <li>JUNIOR JAZZ FOUNDATION PATRON CONCERT SERIES
+                    <ul>
+                        <li>International artist schedule at The Jazz Corner</li>
+                        <li>Regional outreach community schedule at various 
+                            locations</li>
+                        <div id="donation"></div>
+                        <li>NOTE *100% of all ticket proceeds will be donated 
+                            to The Junior Jazz Foundation</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="h2title">
+            <h2>Donation Levels and Benefits</h2>
+        </div>
+        
+        <div class="content">
+            <q>Jazz is the universal language. Everyone can speak jazz with 
+                your heart and your spirit...</q>
+            <p>Throughout the first half of the 20th Century, jazz music was 
+                the heartbeat of American history.  The cultural value of 
+                perpetuating that heritage is immeasurable.</p>
+            <p>The JJF's misssion is the preserve the great American Art Form 
+                of Jazz through education and performance.</p>
+            <p>Your support is key to ensuring jazz lives for generations to 
+                come.  Whether you attend a JJF sponsored event at The Jazz 
+                Corner, enjoy an outreach concert for our theater series, sponsor 
+                a student to attend our annual jazz camp or donate a used instrument 
+                for an aspiring young artist, your support perpetuates the 
+                preservation of jazz.</p>
+            <p>These events not only keep the American Art Form alive, but 
+                they are an adjunt to the community and island objective of 
+                presenting and promoting the arts in general. At the same time, 
+                they assist schools and individual jazz educational programs.</p>
+            <p>You need not be a dedicated jazz aficionado. If you believe it 
+                is important to preserve our most valued American Art Form and 
+                the culture and history that is so highly valued, then we invite 
+                you to support our cause through the foundation...</p>
+        </div>
+        
+        <div class="content">
+            <p>Your gift will help us educate young people about jazz through 
+                our annual Hilton Head Jazz Camp, outreach programs and master 
+                classes.  Your donation also helps us to present more sensational 
+                performances and keep jazz alive for local, regional, national 
+                & international audiences.</p>
+            <h4>George Shearing - Jazz Presenter - $5000 and above </h4>
+            <h4>Bucky Pizzarelli - Jazz Benefactor - $2000</h4>
+            <h4>Benny Goodman - Jazz Fan - $1000</h4>
+            <h4>Louis Armstrong - Jazz Patron - $500</h4>
+            <h4>Art Tatum - Jazz Friend - $250</h4>
+            <h4>George Gershwin - Jazz Member - $150 </h4>
+            <h4>Peggy Lee - Jazz Angel - $50</h4>
+            <p>A portion of each level is tax exempt to the extent that the 
+                law will allow.</p>
         </div>
            
     </body>

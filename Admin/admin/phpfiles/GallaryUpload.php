@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($connection->query($query) === TRUE) {
             $error = "<p style=\"color:green;\">New record created successfully...(indside conncection)</p>";
         } else {
-            $error = "<p style=\"color:red;\"> CONNECTION ERROR " . $sql . "<br>" . $connection->error . "</p>";
+            $error = "<p style=\"color:red;\"> CONNECTION ERROR <br>" . $connection->error . "</p>";
         }
 
         if ($result === true) {
@@ -29,14 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
         else {
 
-            $error = "<p style=\"color:red;\">DATABASE ERROR(some error) " . $sql . "</p>" . $connection->error;
+            $error = "<p style=\"color:red;\">DATABASE ERROR(some error) </p>" . $connection->error;
         }
-    } 
-    
+    }
     else {
-        $error = "<p style=\"color:red;\"> NO FILE UIPLOADED !!!</p>";
+        $error = "<p style=\"color:red;\"> NO FILE UP LOADED !!!</p>";
     }
 
     $connection->close();
 }
-?>
