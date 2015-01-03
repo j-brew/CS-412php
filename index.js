@@ -51,11 +51,8 @@ function collapseDonate(){
     //alert("the width of dinfo is : "+width);
     if (width > 40){
         width = width - 2;
-        console.log("the width of dinfo is : "+width);
+        //console.log("the width of dinfo is : "+width);
         //alert("the width of dinfo is : "+width);
         dinfo.style.width = width+"px";
-    }
-    else{
-        console.log("this is the end my friend");
     }
 };
