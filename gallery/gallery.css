@@ -51,10 +51,106 @@ td{
 .ingallery {
     //border: solid green 1px;
     background: rgba(216,216,216,.8);
-    margin: 0px 15px 0px 15px;
+    margin: 0px 15px 25px 15px;
     padding: 5px 0px 5px 0px;
 }
 a {
     color: black;  
     text-decoration: none;
+}
+
+.divider {
+    border-top: solid black 4px;
+}
+#gtab {
+    color: black;
+    text-decoration: none;
+    background: white;
+    border: black solid 2px;
+/*    width: 75px;
+    height: 20px;*/
+    margin-left: 25px;
+    margin-top: 0px;
+    padding: 5px 5px 5px 5px;
+}
+
+#showGallery {
+    background: rgba(255,255,255,0.5);
+    //border: solid black 2px;
+    width: 810px;
+    max-height: 300px;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    overflow: auto;
+    display: none;
+}
+.galset {
+    //border: solid red 1px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    //background-color: white;
+    text-align: center;
+}
+.galpic {
+    display: inline-block;
+    border: solid black 1px;
+    margin: 5px 5px 0 5px;
+    padding: 0px;
+    width: 100px;
+    height:80px;
+}
+.galpic:hover {
+    border: solid white 1px;
+    cursor: pointer;
+}
+.galpic>img {
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height:80px;
+}
+
+/*   expand photos     */
+.overlay{
+    background-color: #000;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+#overlay{
+    background-color: #000;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.overlayIMGtall{
+    display: block;
+    position: absolute;
+    /* top modified by javascript */
+    left: 50%;
+    border: #ffffff solid medium;
+    width: 600px;
+    height: 800px;
+    margin-left: -300px;
+    z-index: 6;
+}
+.overlayIMGwide{
+    display: block;
+    position: absolute;
+    /* top modified by javascript */
+    left: 50%;
+    border: #ffffff solid medium;
+    width: 800px;
+    height: 600px;
+    margin-left: -400px;
+    z-index: 6;
 }

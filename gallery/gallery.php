@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link rel="stylesheet" type="text/css" href="gallery.css">
         <script src="../index.js" ></script>
+        <script src="js/gallery.js"></script>
 
         <!-- Added by Saeed -->
         <!-- First, add jQuery (and jQuery UI if using custom easing or animation -->
@@ -98,11 +99,23 @@
                             </ul>
                         </div>
                     </div>
+                    
+                    <a id="gtab" href="javascript:hideshow()">Show Gallery</a>
+                    <div class="divider"></div>
+                    <div id="showGallery">
+                        <div class="galset">
+                            <?php basicGallery() ?>
+                            <!--<div class="galpic">
+                                    <img class="bigpic" src="../All_image/Jaz/Gallary/picture" data-larger="../All_image/Jaz/Gallary/picture" alt="some awesome picture"/>
+                                </div>
+                            -->
+                        </div>
+                    </div>
                 </div>
+                
                 <div align="center">
                 <noscript id="noScript">
-                    <h1 style="color: white;"> javascript option in your browser is disabled</h1>
-                      
+                    <!--<h1 style="color: white;"> javascript option in your browser is disabled</h1>-->
                         <table >
                             <?php imageSlider_NoScript() ?>
                         </table>
