@@ -8,19 +8,12 @@
     margin: 10px 10px 10px 10px;
 }
 
-/*#main #info .p2{
-    display: inline-block;
-    width: 540px;
-    //padding: 0px 25px 0px 25px;
-    margin: 0px 0px 20px 25px;
-    text-align: justify;
-    //border: red solid 1px;
-}*/
     /* *****  PART OF HOW TO HELP ***** */
 #leftcol{
     display: inline-block;
     width: 310px;
     //border: yellow 1px solid;
+    //float: left;
     margin-left: 15px;
     padding: 10px;
     text-align: justify;
@@ -32,6 +25,7 @@
     float: right;
     //border: yellow 1px solid;
     margin-right: 15px;
+    //margin-left: 20px;
     padding: 10px;
     text-align: justify;
     background: rgba(216,216,216,.8);
@@ -76,4 +70,31 @@ a {
 #donateNow {
     width: 80px;
     height: 55px;
+}
+
+.donation {
+    //border: solid white 1px;
+    margin: 5px 0 15px 0;
+}
+.level{
+    //border: solid red 1px;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+.level:hover{
+    cursor: pointer;
+}
+.benefit{
+    display: block;
+    list-style: none;
+    border: solid black 1px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-align: center;
+}
+
+.clickInfo {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    padding: 0 0 0 0;
 }

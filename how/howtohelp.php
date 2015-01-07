@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     error_reporting(E_ALL);
     ini_set('display_errors', 'On');
@@ -23,6 +23,7 @@
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link rel="stylesheet" type="text/css" href="howtohelp.css">
         <script src="../index.js" ></script>
+        <script type="text/javascript" src="howtohelp.js"></script>
     </head>
     <body>
         <div id="donate" >
@@ -130,7 +131,7 @@
                             <li>JAZZ EDUCATION - This area can be tailored to individual 
                                 desires with both in kind (instruments) and monetary 
                                 ($25 - $5000) readily accepted and earmarked by JJF for 
-                                specific programs including: 
+                                specific programs including:
                                 <ul>
                                     <li>WORKSHOPS</li>
                                     <li>MASTER CLASSES</li>
@@ -167,7 +168,7 @@
                         <p>Throughout the first half of the 20th Century, jazz music was 
                             the heartbeat of American history.  The cultural value of 
                             perpetuating that heritage is immeasurable.</p>
-                        <p>The JJF's misssion is the preserve the great American Art Form 
+                        <p>The JJF's mission is the preserve the great American Art Form 
                             of Jazz through education and performance.</p>
                         <p>Your support is key to ensuring jazz lives for generations to 
                             come.  Whether you attend a JJF sponsored event at The Jazz 
@@ -191,13 +192,15 @@
                             classes.  Your donation also helps us to present more sensational 
                             performances and keep jazz alive for local, regional, national 
                             & international audiences.</p>
-                        <h4>George Shearing - Jazz Presenter - $5000 and above </h4>
-                        <h4>Bucky Pizzarelli - Jazz Benefactor - $2000</h4>
-                        <h4>Benny Goodman - Jazz Fan - $1000</h4>
-                        <h4>Louis Armstrong - Jazz Patron - $500</h4>
-                        <h4>Art Tatum - Jazz Friend - $250</h4>
-                        <h4>George Gershwin - Jazz Member - $150 </h4>
-                        <h4>Peggy Lee - Jazz Angel - $50</h4>
+                        <h5 class="clickInfo">Click any donation level to discover its benefits.</h5>
+                        <?php benefits(); ?>
+                        <!--<div class="donation"> TEMPLATE
+                            <h4 class="level" onclick="showhideBenefit('benefit_no')">musicianName - levelName - mDonation</h4>
+                            <ul class="benefit" id="benefit_no">
+                                <li>some benefit</li>
+                            </ul>
+                        </div>-->
+                        
                         <p>A portion of each level is tax exempt to the extent that the 
                             law will allow.</p>
                     </div>
@@ -321,7 +324,7 @@
             <p>Throughout the first half of the 20th Century, jazz music was 
                 the heartbeat of American history.  The cultural value of 
                 perpetuating that heritage is immeasurable.</p>
-            <p>The JJF's misssion is the preserve the great American Art Form 
+            <p>The JJF's mission is the preserve the great American Art Form 
                 of Jazz through education and performance.</p>
             <p>Your support is key to ensuring jazz lives for generations to 
                 come.  Whether you attend a JJF sponsored event at The Jazz 
@@ -346,7 +349,6 @@
                 performances and keep jazz alive for local, regional, national 
                 & international audiences.</p>
             <h4>George Shearing - Jazz Presenter - $5000 and above </h4>
-            <h4>Bucky Pizzarelli - Jazz Benefactor - $2000</h4>
             <h4>Benny Goodman - Jazz Fan - $1000</h4>
             <h4>Louis Armstrong - Jazz Patron - $500</h4>
             <h4>Art Tatum - Jazz Friend - $250</h4>

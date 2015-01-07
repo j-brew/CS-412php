@@ -106,12 +106,40 @@ function basicGallery(){
     $connection->close();
 }
 
+function benefits(){
+    include 'dbInfo.php';
+    
+    $connection = mysqli_connect($host, $user, $password, $dbName);
+    if (mysqli_connect_error()) {
+        die("<p><b>Failed to connect to Database</b></p>");// exits
+    }
+    
+    $query = "SELECT * FROM donation";
+    $result = mysqli_query($connection, $query);
+
+    while ($row = mysqli_fetch_assoc($result)){
+        echo '<div class="donation">';
+        echo '<h4 class="level" onclick="showhideBenefit(\'benefit'.$row['idLevel'].'\')">'.$row['musicianName'].' - '.$row['levelName'].' - '.$row['mDonation'].'</h4>';
+        
+        $query2 = "SELECT * FROM benefits WHERE idLevel=".$row['idLevel'];
+        $result2 = mysqli_query($connection, $query2);
+        
+        echo '<ul class="benefit" id="benefit'.$row['idLevel'].'">';
+        while ($row2 = mysqli_fetch_assoc($result2)){
+            echo "<li>".$row2['benefit']."</li>";
+        }
+        echo "</ul>";
+        echo '</div>';
+    }
+    mysqli_close($connection);
+}
+
 function news(){
     include 'dbInfo.php';
     
     $connection = mysqli_connect($host, $user, $password, $dbName);
     if (mysqli_connect_error()) {
-    die("<p><b>Failed to connect to Database</b></p>");// exits
+        die("<p><b>Failed to connect to Database</b></p>");// exits
     }
     
     $query = "SELECT * FROM news";
