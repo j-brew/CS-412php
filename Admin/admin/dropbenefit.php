@@ -1,5 +1,5 @@
 <?php 
-    //include 'phpfiles/quoteUpload.php';
+    include 'phpfiles/benefitUpload.php';
     
     session_start();
     if (!isset($_SESSION['IPaddress'])){
@@ -20,44 +20,48 @@
         $_SESSION['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
         $_SESSION['sessionID'] = session_id();
         $_SESSION['sessionTime'] = time();
-        ?>
+?>
 <!DOCTYPE html>
 
 <html>
     <head>
-        <title>Welcome Admin</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Benefit</title>
         <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
         <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
-        
         <div id="content">
             <div id="clock"></div>
-            
+
             <div id="title">
-                <h1>TJJF Admin</h1>
+                <h1>DROP Benefit</h1>
             </div>
+            
             <div id="out">
-                <form method="POST" action="logout.php">
+                <form id="back" method="POST" action="admin.php">
+                    <input type="submit" value="BACK">
+                </form>
+                <form id="logout" method="POST" action="logout.php">
                     <input type="submit" value="LOG OUT">
                 </form>
             </div>
             
             <div id="info">
-                <ul>
-                    <li><a href="gallery.php" >ADD</a> / <a href="dropgallery.php" >DELETE</a> gallery pictures</li>
-                    <li><a href="concerts.php" >ADD</a> / <a href="dropconcerts.php" >DELETE</a> concerts</li>
-                    <li><a href="news.php" >ADD</a> / <a href="dropnews.php">DELETE</a> news articles</li>
-                    <li><a href="quotes.php">ADD</a> / <a href="dropquotes.php">DELETE</a> testimonials/quotes</li>
-                    <li><a href="benefit.php">ADD</a> / <a href="dropbenefit.php">DELETE</a> benefits</li>
-                </ul>
+                <form name="myForm" method="POST" action="">
+                    
+                    <div id="save">
+                        <input type="submit" value="DELETE">
+                    </div>  
+                    <div>
+                        <?php if ($error != "") { ?>
+                            <p id="error"><?= $error; ?></p>
+                        <?php } ?>
+                    </div>
+                </form>
             </div>
             
-            <div id="footer"></div>
-        </div> 
-        
+        </div>
     </body>
-</html
+</html>
 <?php  } ?>

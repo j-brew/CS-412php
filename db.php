@@ -114,19 +114,23 @@ function benefits(){
         die("<p><b>Failed to connect to Database</b></p>");// exits
     }
     
-    $query = "SELECT * FROM donation";
+    $query = "SELECT * FROM donation ORDER BY mDonation DESC"; //cast(mDonation as unsigned)
     $result = mysqli_query($connection, $query);
-
+    $count = 0;
     while ($row = mysqli_fetch_assoc($result)){
         echo '<div class="donation">';
-        echo '<h4 class="level" onclick="showhideBenefit(\'benefit'.$row['idLevel'].'\')">'.$row['musicianName'].' - '.$row['levelName'].' - '.$row['mDonation'].'</h4>';
-        
-        $query2 = "SELECT * FROM benefits WHERE idLevel=".$row['idLevel'];
-        $result2 = mysqli_query($connection, $query2);
+        if($count > 0){
+            echo '<h4 class="level" onclick="showhideBenefit(\'benefit'.$row['idLevel'].'\')">'.$row['musicianName'].' - '.$row['levelName'].' - $'.$row['mDonation'].'</h4>';
+        }
+        else{
+            echo '<h4 class="level" onclick="showhideBenefit(\'benefit'.$row['idLevel'].'\')">'.$row['musicianName'].' - '.$row['levelName'].' - $'.$row['mDonation'].' and above</h4>';
+        }
+        $count++;
         
         echo '<ul class="benefit" id="benefit'.$row['idLevel'].'">';
-        while ($row2 = mysqli_fetch_assoc($result2)){
-            echo "<li>".$row2['benefit']."</li>";
+        $array = explode("\n", $row['benefits']);
+        foreach($array as $ben){
+            echo "<li>".$ben."</li>";
         }
         echo "</ul>";
         echo '</div>';
