@@ -2,8 +2,8 @@
     width: 600px;
     //height: 500px;
     border: solid black 1px;
-    margin: 10px auto 0 auto;
-    padding: 0px;
+    margin: 10px auto 0px auto;
+    padding: 0 0 10px 0;
     //overflow: scroll;
 }
 

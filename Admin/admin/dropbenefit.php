@@ -1,5 +1,5 @@
 <?php 
-    include 'phpfiles/benefitUpload.php';
+    include 'phpfiles/benefitDelete.php';
     
     session_start();
     if (!isset($_SESSION['IPaddress'])){
@@ -27,7 +27,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Admin Benefit</title>
-        <link rel="stylesheet" type="text/css" href="cssfiles/admin.css">
+        <link href="cssfiles/admin.css" rel="stylesheet" type="text/css" >
+        <link href="cssfiles/dropbenefit.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jsfiles/timer.js"></script>
     </head>
     <body>
@@ -47,20 +48,21 @@
                 </form>
             </div>
             
-            <div id="info">
-                <form name="myForm" method="POST" action="">
+            <div id="dropbenefit">
+                <form method="POST" action="">
+                        
+                    <?php benefits(); ?>
                     
+                    <hr>
                     <div id="save">
                         <input type="submit" value="DELETE">
                     </div>  
-                    <div>
-                        <?php if ($error != "") { ?>
-                            <p id="error"><?= $error; ?></p>
-                        <?php } ?>
-                    </div>
                 </form>
             </div>
-            
+            <?php if($error != ""){ ?>
+                    <div id="error"><?= $error; ?></div>
+            <?php } ?>
+            <div id="footer"></div>
         </div>
     </body>
 </html>

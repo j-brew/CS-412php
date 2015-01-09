@@ -37,7 +37,7 @@
             <div id="clock"></div>
             
             <div id="title">
-                <h1>DROP News</h1>
+                <h1>DROP news</h1>
             </div>
             <div id="out">
                 <form id="back" method="POST" action="admin.php">

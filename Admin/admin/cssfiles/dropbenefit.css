@@ -1,0 +1,44 @@
+#dropbenefit {
+    width: 600px;
+    //height: 500px;
+    border: solid purple 1px;
+    margin: 10px auto 0 auto;
+    padding: 0 0 10px 0;
+    //overflow: scroll;
+}
+.benefitdrop {
+    width: 550px;
+    height: 90px;
+    border: solid black 1px;
+    margin: 10px auto 10px auto;
+    padding: 0 0 0 0;
+}
+.chkbox {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 35px 0 0 10px;
+    float: left;
+}
+.inbenefit {
+    width: 500px;
+    height: 88px;
+    padding: 0 5px 0 5px;
+    //border: solid red 1px;
+    overflow: scroll;
+    display: inline-block;
+}
+
+h4 {
+    padding: 0 0 0 0;
+    margin: 5px 0 0 0;
+    text-align: center;
+    //border: solid green 2px;
+}
+
+ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    //border: solid yellow 2px;
+    text-align: center;
+}

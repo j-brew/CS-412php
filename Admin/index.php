@@ -35,6 +35,7 @@
                     </div>
                 </form>
             </div>
+            <div id="footer"></div>
             <?php if($error != ""){ ?>
                 <div id="error"><?= $error; ?></div>
             <?php } ?>

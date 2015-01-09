@@ -1,7 +1,7 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
+#error_reporting(E_ALL);          # supresses error "headers already sent"
+#ini_set('display_errors', 'On'); # when user has not selected a check box
 
 $error = "";
 
@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     
     $gallery = $_POST['gallery'];
     if(empty($gallery)){
-        $error = "<p>Please select before DROPING</p>";
+        $error = "<p style=\"color:red;\">Please select before DROPING</p>";
     }
     else{
         $long = count($gallery);
