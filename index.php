@@ -1,14 +1,24 @@
 <?php 
-    error_reporting(E_ALL);
-    ini_set('display_errors', 'On');
+//    error_reporting(E_ALL);
+//    ini_set('display_errors', 'On');
 
     require_once 'MobileDetect/Mobile_Detect.php'; 
     $detect = new Mobile_Detect;
     
     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
-    $scriptVersion = $detect->getScriptVersion();
+    //$scriptVersion = $detect->getScriptVersion(); // not required
     //echo "<p style=\"color:white\" >device Type = ".$deviceType."</p>";
-    if ($deviceType == "computer" || $deviceType == "tablet"){
+    $toDesktop;
+    if(isset($_COOKIE['mobile'])){
+        if($_COOKIE['mobile'] == 'yes'){
+            $toDesktop = FALSE;
+        }
+        else{
+            $toDesktop = TRUE;
+        }
+    }
+    
+    if ($deviceType == "computer" || $deviceType == "tablet" || $toDesktop){
 ?>
 <!DOCTYPE html>
 
@@ -100,7 +110,7 @@
 </html>
     <?php }else{ ?>
 <!DOCTYPE html>
-
+<!--  ************************** PHONE ******************************************* -->
 <html>
     <head>
         <title>The Junior Jazz Foundation</title>
@@ -139,6 +149,9 @@
             <a href="http://www.amazon.com/The-Jazz-Corner-Story-Audio/dp/1938417003/ref=sr_1_6?ie=UTF8&amp;qid=1343444982&amp;sr=8-6&amp;keywords=the+jazz+corner+story" target="_blank" class="imageframelink">  
                 <img src="All_image/Jaz/IMG_6905.JPG" alt="book sale">
             </a>
+        </div>
+        <div id="desktop">
+            <a href="version.php" target="_self">desktop version</a>
         </div>
     </body>
 </html>
