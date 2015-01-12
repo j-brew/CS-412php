@@ -1,5 +1,4 @@
 <?php
-
     error_reporting(E_ALL);
     ini_set('display_errors', 'On');
 
@@ -9,9 +8,16 @@
     $detect = new Mobile_Detect;
     
     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
-    $scriptVersion = $detect->getScriptVersion();
+    //$scriptVersion = $detect->getScriptVersion();
     //echo "<p style=\"color:white\" >device Type = ".$deviceType."</p>";
-    if ($deviceType == "computer" || $deviceType == "tablet"){
+        $fromCell = FALSE;
+    if(isset($_COOKIE['mobile'])){
+        if($_COOKIE['mobile'] == 'no'){
+            $fromCell = TRUE;
+        }
+    }
+    
+    if ($deviceType == "computer" || $deviceType == "tablet" || $fromCell){
 ?>
 <!DOCTYPE html>
 
@@ -212,11 +218,16 @@
             <p id="footp">The Village At Wexford, C-1 | 1000 William Hilton Parkway | Hilton Head, SC 29928 | 843.681.9100</p>
             <p id="footc">&copy; The Junior Jazz Foundation</p>
         </div>
+        <?php if($fromCell == TRUE){ ?>
+        <div id="mobile">
+            <a href="../version.php?dir=how&target=howtohelp" target="_self" style="color:white">mobile version</a>
+        </div>
+        <?php } ?>
     </body>
 </html>
     <?php }else{ ?>
 <!DOCTYPE html>
-
+<!--  ************************** PHONE ******************************************* -->
 <html>
     <head>
         <title>The Junior Jazz Foundation</title>
@@ -224,6 +235,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" type="text/css" href="mobile.css">
         <script src="../mobile.js" ></script>
+        <script type="text/javascript" src="howtohelp.js"></script>
     </head>
     <body>
         <div id="title">
@@ -348,16 +360,20 @@
                 classes.  Your donation also helps us to present more sensational 
                 performances and keep jazz alive for local, regional, national 
                 & international audiences.</p>
-            <h4>George Shearing - Jazz Presenter - $5000 and above </h4>
-            <h4>Benny Goodman - Jazz Fan - $1000</h4>
-            <h4>Louis Armstrong - Jazz Patron - $500</h4>
-            <h4>Art Tatum - Jazz Friend - $250</h4>
-            <h4>George Gershwin - Jazz Member - $150 </h4>
-            <h4>Peggy Lee - Jazz Angel - $50</h4>
+            <h5 class="clickInfo">Click any donation level to discover its benefits.</h5>
+            <?php benefits(); ?>
+            <!--<div class="donation"> TEMPLATE
+                <h4 class="level" onclick="showhideBenefit('benefit_no')">musicianName - levelName - mDonation</h4>
+                <ul class="benefit" id="benefit_no">
+                    <li>some benefit</li>
+                </ul>
+            </div>-->
             <p>A portion of each level is tax exempt to the extent that the 
                 law will allow.</p>
         </div>
-           
+        <div id="desktop">
+            <a href="../version.php?dir=how&target=howtohelp" target="_self">desktop version</a>
+        </div>
     </body>
 </html>
     <?php } ?>

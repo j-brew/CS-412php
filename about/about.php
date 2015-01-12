@@ -9,9 +9,15 @@
     $detect = new Mobile_Detect;
     
     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
-    $scriptVersion = $detect->getScriptVersion();
+    //$scriptVersion = $detect->getScriptVersion();
     //echo "<p style=\"color:white\" >device Type = ".$deviceType."</p>";
-    if ($deviceType == "computer" || $deviceType == "tablet"){
+    $fromCell = FALSE;
+    if(isset($_COOKIE['mobile'])){
+        if($_COOKIE['mobile'] == 'no'){
+            $fromCell = TRUE;
+        }
+    }
+    if ($deviceType == "computer" || $deviceType == "tablet" || $fromCell){
 ?>
 <!DOCTYPE html>
 
@@ -168,6 +174,11 @@
             <p id="footp">The Village At Wexford, C-1 | 1000 William Hilton Parkway | Hilton Head, SC 29928 | 843.681.9100</p>
             <p id="footc">&copy; The Junior Jazz Foundation</p>
         </div>
+        <?php if($fromCell == TRUE){ ?>
+        <div id="mobile">
+            <a href="../version.php?dir=about&target=about" target="_self" style="color:white">mobile version</a>
+        </div>
+        <?php } ?>
     </body>
 </html>
     <?php }else{ ?>
@@ -276,6 +287,9 @@
                 <li>o broaden the audience for Jazz</li>
                 <li>To present and showcase quality Jazz on Hilton Head Island</li>
             </ul> 
+        </div>
+        <div id="desktop">
+            <a href="../version.php?dir=about&target=about" target="_self">desktop version</a>
         </div>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <?php 
-//    error_reporting(E_ALL);
-//    ini_set('display_errors', 'On');
+    error_reporting(E_ALL);
+    ini_set('display_errors', 'On');
 
     require_once 'MobileDetect/Mobile_Detect.php'; 
     $detect = new Mobile_Detect;
@@ -8,17 +8,14 @@
     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
     //$scriptVersion = $detect->getScriptVersion(); // not required
     //echo "<p style=\"color:white\" >device Type = ".$deviceType."</p>";
-    $toDesktop;
+    $fromCell = FALSE;
     if(isset($_COOKIE['mobile'])){
-        if($_COOKIE['mobile'] == 'yes'){
-            $toDesktop = FALSE;
-        }
-        else{
-            $toDesktop = TRUE;
+        if($_COOKIE['mobile'] == 'no'){
+            $fromCell = TRUE;
         }
     }
     
-    if ($deviceType == "computer" || $deviceType == "tablet" || $toDesktop){
+    if ($deviceType == "computer" || $deviceType == "tablet" || $fromCell){
 ?>
 <!DOCTYPE html>
 
@@ -105,7 +102,12 @@
         <div id="footer">
             <p id="footp">The Village At Wexford, C-1 | 1000 William Hilton Parkway | Hilton Head, SC 29928 | 843.681.9100</p>
             <p id="footc">&copy; The Junior Jazz Foundation</p>
-        </div>        
+        </div>
+        <?php if($fromCell == TRUE){ ?>
+        <div id="mobile">
+            <a href="version.php?dir=null&target=index" target="_self" style="color:white">mobile version</a>
+        </div>
+        <?php } ?>
     </body>
 </html>
     <?php }else{ ?>
@@ -151,7 +153,7 @@
             </a>
         </div>
         <div id="desktop">
-            <a href="version.php" target="_self">desktop version</a>
+            <a href="version.php?dir=null&target=index" target="_self">desktop version</a>
         </div>
     </body>
 </html>
